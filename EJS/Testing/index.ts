@@ -16,9 +16,21 @@ app.set("views", path.join(__dirname, "views"));
 app.set("port", process.env.PORT ?? 3000);
 
 app.get("/", (req, res) => {
+    const html = `
+    <header class="navbar">
+    <nav>
+    <ul>
+        <li><a href="#">Speel</a></li>
+        <li><a href="#">Overzicht</a></li>
+        <li><a href="#">TeamPlanner</a></li>
+        <li><a href="#">Uitloggen</a></li>
+    </ul>
+    </nav>
+    </header>`;
+    
     res.render("index", {
-        title: "Hello World",
-        message: "Hello World"
+        title: "Card Game",
+        navbar: html
     })
 });
 
