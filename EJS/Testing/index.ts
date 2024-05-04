@@ -1,6 +1,7 @@
 import express, { Express } from "express";
 import dotenv from "dotenv";
 import path from "path";
+import * as data from './card.json';
 
 dotenv.config();
 
