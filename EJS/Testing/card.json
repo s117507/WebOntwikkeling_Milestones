@@ -1,12 +1,12 @@
 [
   {
     "id": "No-001",
-    "name": "Aether Knight",
+    "name": "Burger King",
     "description": "A legendary knight who harnesses the ethereal powers of the Aether, wielding them to maintain balance across the realms.",
-    "age": 457,
+    "Rating": 457,
     "isActive": true,
     "birthDate": "1567-03-05",
-    "imageUrl": "https://example.com/images/aether-knight.jpg",
+    "imageUrl": "./public/assets/burgerking.jpg",
     "rarity": "Legendary",
     "abilities": ["Teleportation", "Energy Manipulation", "Dimensional Travel"],
     "element": "Aether",
@@ -20,8 +20,308 @@
     }
   },
   {
-    "id": "FTC-002",
-    "name": "Shadow Enchantress",
+    "id": "No-002",
+    "name": "Chick-Fil-A",
+    "description": "A mysterious sorceress cloaked in darkness, wielding shadow magic to manipulate the fabric of reality and ensnare her foes.",
+    "age": 324,
+    "isActive": false,
+    "birthDate": "1699-10-31",
+    "imageUrl": "https://example.com/images/shadow-enchantress.jpg",
+    "rarity": "Epic",
+    "abilities": ["Shadow Manipulation", "Illusion Casting", "Night Vision"],
+    "element": "Shadow",
+    "guildAffiliation": {
+      "id": "GUILD-015",
+      "name": "Brotherhood of the Dusk",
+      "guildMaster": "Darkness Wielder",
+      "guildEmblemUrl": "https://example.com/images/guilds/dusk-brotherhood-emblem.jpg",
+      "foundedYear": 1578,
+      "motto": "In Shadows, Truth"
+    }
+  },
+  {
+    "id": "No-003",
+    "name": "Chick-Fil-A",
+    "description": "A mysterious sorceress cloaked in darkness, wielding shadow magic to manipulate the fabric of reality and ensnare her foes.",
+    "age": 324,
+    "isActive": false,
+    "birthDate": "1699-10-31",
+    "imageUrl": "https://example.com/images/shadow-enchantress.jpg",
+    "rarity": "Epic",
+    "abilities": ["Shadow Manipulation", "Illusion Casting", "Night Vision"],
+    "element": "Shadow",
+    "guildAffiliation": {
+      "id": "GUILD-015",
+      "name": "Brotherhood of the Dusk",
+      "guildMaster": "Darkness Wielder",
+      "guildEmblemUrl": "https://example.com/images/guilds/dusk-brotherhood-emblem.jpg",
+      "foundedYear": 1578,
+      "motto": "In Shadows, Truth"
+    }
+  },
+  {
+    "id": "No-004",
+    "name": "Chick-Fil-A",
+    "description": "A mysterious sorceress cloaked in darkness, wielding shadow magic to manipulate the fabric of reality and ensnare her foes.",
+    "age": 324,
+    "isActive": false,
+    "birthDate": "1699-10-31",
+    "imageUrl": "https://example.com/images/shadow-enchantress.jpg",
+    "rarity": "Epic",
+    "abilities": ["Shadow Manipulation", "Illusion Casting", "Night Vision"],
+    "element": "Shadow",
+    "guildAffiliation": {
+      "id": "GUILD-015",
+      "name": "Brotherhood of the Dusk",
+      "guildMaster": "Darkness Wielder",
+      "guildEmblemUrl": "https://example.com/images/guilds/dusk-brotherhood-emblem.jpg",
+      "foundedYear": 1578,
+      "motto": "In Shadows, Truth"
+    }
+  },
+  {
+    "id": "No-005",
+    "name": "Chick-Fil-A",
+    "description": "A mysterious sorceress cloaked in darkness, wielding shadow magic to manipulate the fabric of reality and ensnare her foes.",
+    "age": 324,
+    "isActive": false,
+    "birthDate": "1699-10-31",
+    "imageUrl": "https://example.com/images/shadow-enchantress.jpg",
+    "rarity": "Epic",
+    "abilities": ["Shadow Manipulation", "Illusion Casting", "Night Vision"],
+    "element": "Shadow",
+    "guildAffiliation": {
+      "id": "GUILD-015",
+      "name": "Brotherhood of the Dusk",
+      "guildMaster": "Darkness Wielder",
+      "guildEmblemUrl": "https://example.com/images/guilds/dusk-brotherhood-emblem.jpg",
+      "foundedYear": 1578,
+      "motto": "In Shadows, Truth"
+    }
+  },
+  {
+    "id": "No-006",
+    "name": "Chick-Fil-A",
+    "description": "A mysterious sorceress cloaked in darkness, wielding shadow magic to manipulate the fabric of reality and ensnare her foes.",
+    "age": 324,
+    "isActive": false,
+    "birthDate": "1699-10-31",
+    "imageUrl": "https://example.com/images/shadow-enchantress.jpg",
+    "rarity": "Epic",
+    "abilities": ["Shadow Manipulation", "Illusion Casting", "Night Vision"],
+    "element": "Shadow",
+    "guildAffiliation": {
+      "id": "GUILD-015",
+      "name": "Brotherhood of the Dusk",
+      "guildMaster": "Darkness Wielder",
+      "guildEmblemUrl": "https://example.com/images/guilds/dusk-brotherhood-emblem.jpg",
+      "foundedYear": 1578,
+      "motto": "In Shadows, Truth"
+    }
+  },
+  {
+    "id": "No-002",
+    "name": "Chick-Fil-A",
+    "description": "A mysterious sorceress cloaked in darkness, wielding shadow magic to manipulate the fabric of reality and ensnare her foes.",
+    "age": 324,
+    "isActive": false,
+    "birthDate": "1699-10-31",
+    "imageUrl": "https://example.com/images/shadow-enchantress.jpg",
+    "rarity": "Epic",
+    "abilities": ["Shadow Manipulation", "Illusion Casting", "Night Vision"],
+    "element": "Shadow",
+    "guildAffiliation": {
+      "id": "GUILD-015",
+      "name": "Brotherhood of the Dusk",
+      "guildMaster": "Darkness Wielder",
+      "guildEmblemUrl": "https://example.com/images/guilds/dusk-brotherhood-emblem.jpg",
+      "foundedYear": 1578,
+      "motto": "In Shadows, Truth"
+    }
+  },
+  {
+    "id": "No-007",
+    "name": "Chick-Fil-A",
+    "description": "A mysterious sorceress cloaked in darkness, wielding shadow magic to manipulate the fabric of reality and ensnare her foes.",
+    "age": 324,
+    "isActive": false,
+    "birthDate": "1699-10-31",
+    "imageUrl": "https://example.com/images/shadow-enchantress.jpg",
+    "rarity": "Epic",
+    "abilities": ["Shadow Manipulation", "Illusion Casting", "Night Vision"],
+    "element": "Shadow",
+    "guildAffiliation": {
+      "id": "GUILD-015",
+      "name": "Brotherhood of the Dusk",
+      "guildMaster": "Darkness Wielder",
+      "guildEmblemUrl": "https://example.com/images/guilds/dusk-brotherhood-emblem.jpg",
+      "foundedYear": 1578,
+      "motto": "In Shadows, Truth"
+    }
+  },
+  {
+    "id": "No-008",
+    "name": "Chick-Fil-A",
+    "description": "A mysterious sorceress cloaked in darkness, wielding shadow magic to manipulate the fabric of reality and ensnare her foes.",
+    "age": 324,
+    "isActive": false,
+    "birthDate": "1699-10-31",
+    "imageUrl": "https://example.com/images/shadow-enchantress.jpg",
+    "rarity": "Epic",
+    "abilities": ["Shadow Manipulation", "Illusion Casting", "Night Vision"],
+    "element": "Shadow",
+    "guildAffiliation": {
+      "id": "GUILD-015",
+      "name": "Brotherhood of the Dusk",
+      "guildMaster": "Darkness Wielder",
+      "guildEmblemUrl": "https://example.com/images/guilds/dusk-brotherhood-emblem.jpg",
+      "foundedYear": 1578,
+      "motto": "In Shadows, Truth"
+    }
+  },
+  {
+    "id": "No-009",
+    "name": "Chick-Fil-A",
+    "description": "A mysterious sorceress cloaked in darkness, wielding shadow magic to manipulate the fabric of reality and ensnare her foes.",
+    "age": 324,
+    "isActive": false,
+    "birthDate": "1699-10-31",
+    "imageUrl": "https://example.com/images/shadow-enchantress.jpg",
+    "rarity": "Epic",
+    "abilities": ["Shadow Manipulation", "Illusion Casting", "Night Vision"],
+    "element": "Shadow",
+    "guildAffiliation": {
+      "id": "GUILD-015",
+      "name": "Brotherhood of the Dusk",
+      "guildMaster": "Darkness Wielder",
+      "guildEmblemUrl": "https://example.com/images/guilds/dusk-brotherhood-emblem.jpg",
+      "foundedYear": 1578,
+      "motto": "In Shadows, Truth"
+    }
+  },
+  {
+    "id": "No-002",
+    "name": "Chick-Fil-A",
+    "description": "A mysterious sorceress cloaked in darkness, wielding shadow magic to manipulate the fabric of reality and ensnare her foes.",
+    "age": 324,
+    "isActive": false,
+    "birthDate": "1699-10-31",
+    "imageUrl": "https://example.com/images/shadow-enchantress.jpg",
+    "rarity": "Epic",
+    "abilities": ["Shadow Manipulation", "Illusion Casting", "Night Vision"],
+    "element": "Shadow",
+    "guildAffiliation": {
+      "id": "GUILD-015",
+      "name": "Brotherhood of the Dusk",
+      "guildMaster": "Darkness Wielder",
+      "guildEmblemUrl": "https://example.com/images/guilds/dusk-brotherhood-emblem.jpg",
+      "foundedYear": 1578,
+      "motto": "In Shadows, Truth"
+    }
+  },
+  {
+    "id": "No-010",
+    "name": "Chick-Fil-A",
+    "description": "A mysterious sorceress cloaked in darkness, wielding shadow magic to manipulate the fabric of reality and ensnare her foes.",
+    "age": 324,
+    "isActive": false,
+    "birthDate": "1699-10-31",
+    "imageUrl": "https://example.com/images/shadow-enchantress.jpg",
+    "rarity": "Epic",
+    "abilities": ["Shadow Manipulation", "Illusion Casting", "Night Vision"],
+    "element": "Shadow",
+    "guildAffiliation": {
+      "id": "GUILD-015",
+      "name": "Brotherhood of the Dusk",
+      "guildMaster": "Darkness Wielder",
+      "guildEmblemUrl": "https://example.com/images/guilds/dusk-brotherhood-emblem.jpg",
+      "foundedYear": 1578,
+      "motto": "In Shadows, Truth"
+    }
+  },
+  {
+    "id": "No-002",
+    "name": "Chick-Fil-A",
+    "description": "A mysterious sorceress cloaked in darkness, wielding shadow magic to manipulate the fabric of reality and ensnare her foes.",
+    "age": 324,
+    "isActive": false,
+    "birthDate": "1699-10-31",
+    "imageUrl": "https://example.com/images/shadow-enchantress.jpg",
+    "rarity": "Epic",
+    "abilities": ["Shadow Manipulation", "Illusion Casting", "Night Vision"],
+    "element": "Shadow",
+    "guildAffiliation": {
+      "id": "GUILD-015",
+      "name": "Brotherhood of the Dusk",
+      "guildMaster": "Darkness Wielder",
+      "guildEmblemUrl": "https://example.com/images/guilds/dusk-brotherhood-emblem.jpg",
+      "foundedYear": 1578,
+      "motto": "In Shadows, Truth"
+    }
+  },
+  {
+    "id": "No-011",
+    "name": "Chick-Fil-A",
+    "description": "A mysterious sorceress cloaked in darkness, wielding shadow magic to manipulate the fabric of reality and ensnare her foes.",
+    "age": 324,
+    "isActive": false,
+    "birthDate": "1699-10-31",
+    "imageUrl": "https://example.com/images/shadow-enchantress.jpg",
+    "rarity": "Epic",
+    "abilities": ["Shadow Manipulation", "Illusion Casting", "Night Vision"],
+    "element": "Shadow",
+    "guildAffiliation": {
+      "id": "GUILD-015",
+      "name": "Brotherhood of the Dusk",
+      "guildMaster": "Darkness Wielder",
+      "guildEmblemUrl": "https://example.com/images/guilds/dusk-brotherhood-emblem.jpg",
+      "foundedYear": 1578,
+      "motto": "In Shadows, Truth"
+    }
+  },
+  {
+    "id": "No-012",
+    "name": "Chick-Fil-A",
+    "description": "A mysterious sorceress cloaked in darkness, wielding shadow magic to manipulate the fabric of reality and ensnare her foes.",
+    "age": 324,
+    "isActive": false,
+    "birthDate": "1699-10-31",
+    "imageUrl": "https://example.com/images/shadow-enchantress.jpg",
+    "rarity": "Epic",
+    "abilities": ["Shadow Manipulation", "Illusion Casting", "Night Vision"],
+    "element": "Shadow",
+    "guildAffiliation": {
+      "id": "GUILD-015",
+      "name": "Brotherhood of the Dusk",
+      "guildMaster": "Darkness Wielder",
+      "guildEmblemUrl": "https://example.com/images/guilds/dusk-brotherhood-emblem.jpg",
+      "foundedYear": 1578,
+      "motto": "In Shadows, Truth"
+    }
+  },
+  {
+    "id": "No-013",
+    "name": "Chick-Fil-A",
+    "description": "A mysterious sorceress cloaked in darkness, wielding shadow magic to manipulate the fabric of reality and ensnare her foes.",
+    "age": 324,
+    "isActive": false,
+    "birthDate": "1699-10-31",
+    "imageUrl": "https://example.com/images/shadow-enchantress.jpg",
+    "rarity": "Epic",
+    "abilities": ["Shadow Manipulation", "Illusion Casting", "Night Vision"],
+    "element": "Shadow",
+    "guildAffiliation": {
+      "id": "GUILD-015",
+      "name": "Brotherhood of the Dusk",
+      "guildMaster": "Darkness Wielder",
+      "guildEmblemUrl": "https://example.com/images/guilds/dusk-brotherhood-emblem.jpg",
+      "foundedYear": 1578,
+      "motto": "In Shadows, Truth"
+    }
+  },
+  {
+    "id": "No-014",
+    "name": "Chick-Fil-A",
     "description": "A mysterious sorceress cloaked in darkness, wielding shadow magic to manipulate the fabric of reality and ensnare her foes.",
     "age": 324,
     "isActive": false,
