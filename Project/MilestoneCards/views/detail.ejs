@@ -18,9 +18,27 @@
     </header>
     <main>
         <% if (card) { %>
-            <h1><%= card.name %></h1>
-            <p>Description: <%= card.description %></p>
-            <p>Rating: <%= card.rating %></p>
+            <section class="card">
+                <h1><%= card.name %></h1>
+                <img src="<%= card.imageUrl %>" alt="<%= card.name %>">
+                <article class="card-info">
+                    <p><strong>Description:</strong><br> <%= card.description %></p>
+                    <p><strong>Rating:</strong> <%= card.rating %></p>
+                    <p><strong>Active:</strong> <%= card.isActive ? 'Yes' : 'No' %></p>
+                    <p><strong>Birth Date:</strong> <%= new Date(card.birthDate).toLocaleDateString() %></p>
+                    <p><strong>Type:</strong> <%= card.type %></p>
+                    <p><strong>Abilities:</strong> <%= card.abilities.join(', ') %></p>
+                    <p><strong>Artist:</strong> <%= card.artist %></p>
+                    <div class="guild-info">
+                        <p><strong>Guild Affiliation:</strong></p>
+                        <ul>
+                            <li><strong>ID:</strong> <%= card.guildAffiliation.id %></li>
+                            <li><strong>Name:</strong> <%= card.guildAffiliation.name %></li>
+                            <li><strong>Country:</strong> <%= card.guildAffiliation.country %></li>
+                        </ul>
+                    </div>
+                </article>
+            </section>
         <% } else { %>
             <p>Card not found.</p>
         <% } %>

@@ -15,12 +15,10 @@
                 <li><a href="teamplanner.html">Guilds</a></li>
             </ul>
         </nav>
-        <div>
-        <form>
-        <input type="text" placeholder="Search...">
-        <button type="submit">Search</button>
+        <form action="/" method="GET">
+            <input type="text" name="search" placeholder="Search by name...">
+            <button type="submit">Search</button>
         </form>
-        </div>
     </header>
     <main>
         <table id="cardTable">
@@ -41,7 +39,7 @@
                 <% cards.forEach(card => { %>
                     <tr>
                         <td>
-                            <a href="/detail/<%= card.id %>">
+                            <a href="/detail/<%= card.name %>">
                                 <img src="<%= card.imageUrl %>" alt="<%= card.name %>" />
                                 <br>
                                 <%= card.name %>

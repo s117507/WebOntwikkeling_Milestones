@@ -14,7 +14,6 @@ grid-template-areas:
     "Footer";
 height: 100vh;
 width: 100vw;
-color: white;
 }
 
 header {
@@ -141,4 +140,54 @@ td:first-child {
 
 tr {
   border: 1px solid black; 
+}
+
+/* card */
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 400px;
+  background-color: #536872;
+  text-align: center;
+  color: white;
+}
+
+.card p {
+  margin-bottom: 3px;
+}
+
+.card h1 {
+  margin-bottom: 3px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.card-info {
+  font-size: 16px;
+}
+
+.guild-info {
+  margin-top: 20px;
+}
+
+.guild-info ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.guild-info li {
+  margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  .card {
+      max-width: 90%;
+  }
 }

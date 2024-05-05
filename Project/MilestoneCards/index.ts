@@ -18,15 +18,29 @@ app.set("port", process.env.PORT ?? 3000);
 
 let cards: Cards[]; 
 
-app.get("/", async(req, res) => {
-    let response = await fetch('https://raw.githubusercontent.com/s117507/WebOntwikkeling_Milestones/main/Project/MilestoneCards/card.json')
-    cards = await response.json();
+app.get("/", async (req, res) => {
+    let response = await fetch('https://raw.githubusercontent.com/s117507/WebOntwikkeling_Milestones/main/Project/MilestoneCards/card.json');
+    cards = await response.json(); 
 
-    res.render("index", {
-        title: "Card Game",
-        cards
-    });
+    const { search } = req.query;
+
+    if (search) {
+        const filteredCards = cards.filter(card => card.name.toLowerCase().includes(search.toString().toLowerCase()));
+        res.render("index", {
+            title: "Card Game",
+            cards: filteredCards
+        });
+    } else {
+        res.render("index", {
+            title: "Card Game",
+            cards
+        });
+    }
 });
+
+
+
+
 
 app.get('/detail/:name', async(req, res) => {
     const cardName = req.params.name;
