@@ -28,9 +28,9 @@ app.get("/", async(req, res) => {
     });
 });
 
-app.get('/detail/:id', async(req, res) => {
-    const cardId = req.params.id;
-    const card: Cards | undefined = cards.find((card) => card.id === cardId);
+app.get('/detail/:name', async(req, res) => {
+    const cardName = req.params.name;
+    const card: Cards | undefined = cards.find((card) => card.name === cardName);
 
 
     res.render('detail', { title: 'Card Details', card });
