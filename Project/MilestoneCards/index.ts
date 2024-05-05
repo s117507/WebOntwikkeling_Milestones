@@ -36,8 +36,8 @@ async function insertCardsIntoDB() {
         const count = await dbCollection.countDocuments();
         if (count === 0) {
             const response = await fetch('https://raw.githubusercontent.com/s117507/WebOntwikkeling_Milestones/main/Project/MilestoneCards/card.json');
-            const cards: Cards[] = await response.json();
-            await dbCollection.insertMany(cards);
+            const jsonData = await response.json();
+            const cards: Cards[] = jsonData as Cards[];
 
             console.log('Data inserted into MongoDB');
         } else {
