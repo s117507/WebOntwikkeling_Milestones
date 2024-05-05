@@ -41,6 +41,7 @@
                     <th>Menu</th>
                     <th>Artist</th>
                     <th>Owner</th>
+                    <th>Action</th>
                 </tr>
             </thead>
             <tbody>
@@ -61,6 +62,9 @@
                         <td class="cell"><%= card.menu.join(', ') %></td>
                         <td class="cell"><%= card.artist %></td>
                         <td class="cell"><%= card.owner.name %></td>
+                        <td class="cell">
+                            <a href="/edit/<%= card.name %>">Edit</a>
+                        </td>
                     </tr>
                 <% }); %>
             </tbody>

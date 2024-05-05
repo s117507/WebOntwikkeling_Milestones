@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Card</title>
+</head>
+<body>
+    <h1>Edit Card</h1>
+    <form action="/edit/<%= card.name %>" method="POST">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" value="<%= card.name %>" required>
+        </div>
+        <div>
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" rows="4" cols="50"><%= card.description %></textarea>
+        </div>
+        <div>
+            <label for="type">Type:</label>
+            <input type="text" id="type" name="type" value="<%= card.type %>" required>
+        </div>
+        <div>
+            <label for="rating">Rating:</label>
+            <select id="rating" name="rating" required>
+                <option value="1" <%= card.rating === 1 ? 'selected' : '' %>>1</option>
+                <option value="2" <%= card.rating === 2 ? 'selected' : '' %>>2</option>
+                <option value="3" <%= card.rating === 3 ? 'selected' : '' %>>3</option>
+            </select>
+        </div>
+        <button type="submit">Save Changes</button>
+    </form>
+</body>
+</html>
