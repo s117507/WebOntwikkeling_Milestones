@@ -16,9 +16,11 @@ app.set("views", path.join(__dirname, "views"));
 
 app.set("port", process.env.PORT ?? 3000);
 
+let cards: Cards[]; 
+
 app.get("/", async(req, res) => {
     let response = await fetch('https://raw.githubusercontent.com/s117507/WebOntwikkeling_Milestones/main/Project/MilestoneCards/card.json')
-    let cards : Cards[] = await response.json();
+    cards = await response.json();
 
     res.render("index", {
         title: "Card Game",
@@ -26,8 +28,13 @@ app.get("/", async(req, res) => {
     });
 });
 
+app.get('/detail/:id', async(req, res) => {
+    const cardId = req.params.id;
+    const card: Cards | undefined = cards.find((card) => card.id === cardId);
 
 
+    res.render('detail', { title: 'Card Details', card });
+});
 
 app.listen(app.get("port"), () => {
     console.log("Server started on http://localhost:" + app.get("port"));
