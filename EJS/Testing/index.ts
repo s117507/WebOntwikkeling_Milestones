@@ -16,6 +16,8 @@ app.set("views", path.join(__dirname, "views"));
 
 app.set("port", process.env.PORT ?? 3000);
 
+const cards : Cards[] = data;
+
 app.get("/", (req, res) => {
     res.render("index", {
         title: "Card Game"
@@ -24,8 +26,7 @@ app.get("/", (req, res) => {
 
 app.get("/", (req, res) => {
     try {
-        const cards : Cards[] = data; // Using the imported JSON data
-        res.render('index', { cards }); // Passing the 'cards' variable to the EJS template
+        res.render('index', { cards }); 
     } catch (error) {
         console.error('Error fetching data:', error);
         res.status(500).send('Internal Server Error');

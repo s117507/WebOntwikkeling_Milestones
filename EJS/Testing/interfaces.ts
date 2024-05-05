@@ -4,7 +4,7 @@ export interface Cards {
     description: string;
     rating: number;
     isActive: boolean;
-    birthDate: string; // Change type to string
+    birthDate: string; 
     imageUrl: string;
     type: string;
     abilities: string[];
