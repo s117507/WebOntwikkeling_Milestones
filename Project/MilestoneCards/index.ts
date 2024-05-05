@@ -1,7 +1,7 @@
 import express, { Express, Request, Response } from "express";
 import dotenv from "dotenv";
 import path from "path";
-import fetch from 'node-fetch';
+import { default as fetch } from 'node-fetch';
 import { Cards } from "./interfaces";
 import { MongoClient, Collection } from 'mongodb';
 
