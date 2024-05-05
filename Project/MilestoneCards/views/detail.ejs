@@ -27,14 +27,14 @@
                     <p><strong>Active:</strong> <%= card.isActive ? 'Yes' : 'No' %></p>
                     <p><strong>Birth Date:</strong> <%= new Date(card.birthDate).toLocaleDateString() %></p>
                     <p><strong>Type:</strong> <%= card.type %></p>
-                    <p><strong>Abilities:</strong> <%= card.menu.join(', ') %></p>
+                    <p><strong>Menu:</strong> <%= card.menu.join(', ') %></p>
                     <p><strong>Artist:</strong> <%= card.artist %></p>
                     <div class="guild-info">
                         <p><strong>Guild Affiliation:</strong></p>
                         <ul>
-                            <li><strong>ID:</strong> <%= card.guildAffiliation.id %></li>
-                            <li><strong>Name:</strong> <%= card.guildAffiliation.name %></li>
-                            <li><strong>Country:</strong> <%= card.guildAffiliation.country %></li>
+                            <li><strong>ID:</strong> <%= card.owner.id %></li>
+                            <li><strong>Name:</strong> <%= card.owner.name %></li>
+                            <li><strong>Country:</strong> <%= card.owner.country %></li>
                         </ul>
                     </div>
                 </article>

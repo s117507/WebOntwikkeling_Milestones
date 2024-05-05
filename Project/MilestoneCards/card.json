@@ -10,7 +10,7 @@
     "type": "Fast Food",
     "menu": ["Burgers", "Fries", "Nuggets"],
     "artist": "Silvie Illustrations",
-    "guildAffiliation": {
+    "owner": {
       "id": "GUILD-009",
       "name": "Order of the Cosmic Veil",
       "country": "Balance in All, All in Balance"
@@ -27,7 +27,7 @@
       "type": "Fast Food",
       "menu": ["Burgers", "Fries", "Nuggets"],
       "artist": "Silvie Illustrations",
-      "guildAffiliation": {
+      "owner": {
         "id": "GUILD-009",
         "name": "Order of the Cosmic Veil",
         "country": "Balance in All, All in Balance"
@@ -44,7 +44,7 @@
     "type": "Fast Food",
     "menu": ["Pizza", "Fries", "Nuggets"],
     "artist": "Silvie Illustrations",
-    "guildAffiliation": {
+    "owner": {
       "id": "GUILD-009",
       "name": "Order of the Cosmic Veil",
       "country": "Balance in All, All in Balance"
@@ -61,7 +61,7 @@
     "type": "Dessert",
     "menu": ["Donuts", "Coffee"],
     "artist": "Silvie Illustrations",
-    "guildAffiliation": {
+    "owner": {
       "id": "GUILD-009",
       "name": "Order of the Cosmic Veil",
       "country": "Balance in All, All in Balance"
@@ -78,7 +78,7 @@
     "type": "Dessert",
     "menu": ["Burgers", "Fries", "Bribing"],
     "artist": "Silvie Illustrations",
-    "guildAffiliation": {
+    "owner": {
       "id": "GUILD-009",
       "name": "Order of the Cosmic Veil",
       "country": "Balance in All, All in Balance"
@@ -95,7 +95,7 @@
     "type": "Dessert",
     "menu": ["Donuts", "Coffee"],
     "artist": "Silvie Illustrations",
-    "guildAffiliation": {
+    "owner": {
       "id": "GUILD-009",
       "name": "Order of the Cosmic Veil",
       "country": "Balance in All, All in Balance"
@@ -112,7 +112,7 @@
     "type": "Dessert",
     "menu": ["Donuts", "Coffee"],
     "artist": "Silvie Illustrations",
-    "guildAffiliation": {
+    "owner": {
       "id": "GUILD-009",
       "name": "Order of the Cosmic Veil",
       "country": "Balance in All, All in Balance"
@@ -129,7 +129,7 @@
     "type": "Dessert",
     "menu": ["Donuts", "Coffee"],
     "artist": "Silvie Illustrations",
-    "guildAffiliation": {
+    "owner": {
       "id": "GUILD-009",
       "name": "Order of the Cosmic Veil",
       "country": "Balance in All, All in Balance"
@@ -146,7 +146,7 @@
     "type": "Dessert",
     "menu": ["Donuts", "Coffee"],
     "artist": "Silvie Illustrations",
-    "guildAffiliation": {
+    "owner": {
       "id": "GUILD-009",
       "name": "Order of the Cosmic Veil",
       "country": "Balance in All, All in Balance"
@@ -163,7 +163,7 @@
     "type": "Dessert",
     "menu": ["Donuts", "Coffee"],
     "artist": "Silvie Illustrations",
-    "guildAffiliation": {
+    "owner": {
       "id": "GUILD-009",
       "name": "Order of the Cosmic Veil",
       "country": "Balance in All, All in Balance"
@@ -180,7 +180,7 @@
     "type": "Dessert",
     "menu": ["Donuts", "Coffee"],
     "artist": "Silvie Illustrations",
-    "guildAffiliation": {
+    "owner": {
       "id": "GUILD-009",
       "name": "Order of the Cosmic Veil",
       "country": "Balance in All, All in Balance"
@@ -197,7 +197,7 @@
     "type": "Dessert",
     "menu": ["Donuts", "Coffee"],
     "artist": "Silvie Illustrations",
-    "guildAffiliation": {
+    "owner": {
       "id": "GUILD-009",
       "name": "Order of the Cosmic Veil",
       "country": "Balance in All, All in Balance"
@@ -214,7 +214,7 @@
     "type": "Dessert",
     "menu": ["Donuts", "Coffee"],
     "artist": "Silvie Illustrations",
-    "guildAffiliation": {
+    "owner": {
       "id": "GUILD-009",
       "name": "Order of the Cosmic Veil",
       "country": "Balance in All, All in Balance"
@@ -231,7 +231,7 @@
     "type": "Dessert",
     "menu": ["Donuts", "Coffee"],
     "artist": "Silvie Illustrations",
-    "guildAffiliation": {
+    "owner": {
       "id": "GUILD-009",
       "name": "Order of the Cosmic Veil",
       "country": "Balance in All, All in Balance"
@@ -248,7 +248,7 @@
     "type": "Dessert",
     "menu": ["Donuts", "Coffee"],
     "artist": "Silvie Illustrations",
-    "guildAffiliation": {
+    "owner": {
       "id": "GUILD-009",
       "name": "Order of the Cosmic Veil",
       "country": "Balance in All, All in Balance"
@@ -265,7 +265,7 @@
     "type": "Dessert",
     "menu": ["Donuts", "Coffee"],
     "artist": "Silvie Illustrations",
-    "guildAffiliation": {
+    "owner": {
       "id": "GUILD-009",
       "name": "Order of the Cosmic Veil",
       "country": "Balance in All, All in Balance"
@@ -282,7 +282,7 @@
     "type": "Dessert",
     "menu": ["Donuts", "Coffee"],
     "artist": "Silvie Illustrations",
-    "guildAffiliation": {
+    "owner": {
       "id": "GUILD-009",
       "name": "Order of the Cosmic Veil",
       "country": "Balance in All, All in Balance"

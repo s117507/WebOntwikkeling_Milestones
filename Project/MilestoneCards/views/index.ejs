@@ -38,9 +38,9 @@
                     <th>Active</th>
                     <th>Founded</th>
                     <th>Type</th>
-                    <th>Abilities</th>
+                    <th>Menu</th>
                     <th>Artist</th>
-                    <th>Affiliation</th>
+                    <th>Owner</th>
                 </tr>
             </thead>
             <tbody>
@@ -60,7 +60,7 @@
                         <td class="cell"><%= card.type %></td>
                         <td class="cell"><%= card.menu.join(', ') %></td>
                         <td class="cell"><%= card.artist %></td>
-                        <td class="cell"><%= card.guildAffiliation.name %></td>
+                        <td class="cell"><%= card.owner.name %></td>
                     </tr>
                 <% }); %>
             </tbody>
