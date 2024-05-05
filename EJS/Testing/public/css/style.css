@@ -22,6 +22,11 @@ header {
   background-color: #ff4848;
 }
 
+main {
+  grid-area: Main;
+  margin: 3em 2em 0 2em;
+}
+
 footer {
   grid-area: Footer;
   background-color: #17213a;
@@ -56,7 +61,7 @@ footer {
 }
 
 .navbar a {
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
@@ -64,3 +69,26 @@ footer {
   text-decoration: underline;
 }
 
+input {
+  border-radius: 4px;
+  outline: none;
+  border: none;
+}
+
+button {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  box-shadow: none;
+  border: none;
+  padding: 0 2px 0 2px;
+  border-radius: 4px;
+}
+
+/* Tables */
+table{
+  width: 100%;
+}
+
+table, th {
+  color: black;
+}

@@ -3,360 +3,306 @@
     "id": "No-001",
     "name": "Burger King",
     "description": "Burger King, a global fast-food chain, offers flame-grilled burgers and a variety of other menu items in a casual dining setting.",
-    "Rating": 457,
+    "rating": 457,
     "isActive": true,
     "birthDate": "28-07-1954",
     "imageUrl": "https://github.com/s117507/WebOntwikkeling_Milestones/blob/main/EJS/Testing/public/assets/burgerking.jpg?raw=true",
-    "Type": "Fast Food",
+    "type": "Fast Food",
     "abilities": ["Burgers", "Fries", "Nuggets"],
-    "Artist": "Silvie Illustrations",
+    "artist": "Silvie Illustrations",
     "guildAffiliation": {
       "id": "GUILD-009",
       "name": "Order of the Cosmic Veil",
-      "guildMaster": "Celestial Mage",
-      "guildEmblemUrl": "https://example.com/images/guilds/cosmic-veil-emblem.jpg",
-      "foundedYear": 1423,
-      "motto": "Balance in All, All in Balance"
+      "country": "Balance in All, All in Balance"
     }
   },
     {
       "id": "No-002",
       "name": "Chick-Fil-A",
       "description": "A legendary knight who harnesses the ethereal powers of the Aether, wielding them to maintain balance across the realms.",
-      "Rating": 457,
+      "rating": 457,
       "isActive": true,
       "birthDate": "1567-03-05",
       "imageUrl": "https://github.com/s117507/WebOntwikkeling_Milestones/blob/main/EJS/Testing/public/assets/chickfila.jpg?raw=true",
-      "Type": "Fast Food",
+      "type": "Fast Food",
       "abilities": ["Burgers", "Fries", "Nuggets"],
-      "Artist": "Silvie Illustrations",
+      "artist": "Silvie Illustrations",
       "guildAffiliation": {
         "id": "GUILD-009",
         "name": "Order of the Cosmic Veil",
-        "guildMaster": "Celestial Mage",
-        "guildEmblemUrl": "https://example.com/images/guilds/cosmic-veil-emblem.jpg",
-        "foundedYear": 1423,
-        "motto": "Balance in All, All in Balance"
+        "country": "Balance in All, All in Balance"
      }
   },
   {
     "id": "No-003",
     "name": "Dominos Pizza",
     "description": "A legendary knight who harnesses the ethereal powers of the Aether, wielding them to maintain balance across the realms.",
-    "Rating": 457,
+    "rating": 457,
     "isActive": true,
     "birthDate": "1567-03-05",
     "imageUrl": "https://github.com/s117507/WebOntwikkeling_Milestones/blob/main/EJS/Testing/public/assets/dominos.jpg?raw=true",
-    "Type": "Fast Food",
+    "type": "Fast Food",
     "abilities": ["Pizza", "Fries", "Nuggets"],
-    "Artist": "Silvie Illustrations",
+    "artist": "Silvie Illustrations",
     "guildAffiliation": {
       "id": "GUILD-009",
       "name": "Order of the Cosmic Veil",
-      "guildMaster": "Celestial Mage",
-      "guildEmblemUrl": "https://example.com/images/guilds/cosmic-veil-emblem.jpg",
-      "foundedYear": 1423,
-      "motto": "Balance in All, All in Balance"
+      "country": "Balance in All, All in Balance"
     }
   },
   {
     "id": "No-004",
     "name": "Dunkin Donuts",
     "description": "A legendary knight who harnesses the ethereal powers of the Aether, wielding them to maintain balance across the realms.",
-    "Rating": 457,
+    "rating": 457,
     "isActive": true,
     "birthDate": "1567-03-05",
     "imageUrl": "https://github.com/s117507/WebOntwikkeling_Milestones/blob/main/EJS/Testing/public/assets/dunkindonuts.jpg?raw=true",
-    "Type": "Dessert",
+    "type": "Dessert",
     "abilities": ["Donuts", "Coffee"],
-    "Artist": "Silvie Illustrations",
+    "artist": "Silvie Illustrations",
     "guildAffiliation": {
       "id": "GUILD-009",
       "name": "Order of the Cosmic Veil",
-      "guildMaster": "Celestial Mage",
-      "guildEmblemUrl": "https://example.com/images/guilds/cosmic-veil-emblem.jpg",
-      "foundedYear": 1423,
-      "motto": "Balance in All, All in Balance"
+      "country": "Balance in All, All in Balance"
     }
   },
   {
     "id": "No-004",
     "name": "Dunkin Donuts",
     "description": "A legendary knight who harnesses the ethereal powers of the Aether, wielding them to maintain balance across the realms.",
-    "Rating": 457,
+    "rating": 457,
     "isActive": true,
     "birthDate": "1567-03-05",
     "imageUrl": "https://github.com/s117507/WebOntwikkeling_Milestones/blob/main/EJS/Testing/public/assets/dunkindonuts.jpg?raw=true",
-    "Type": "Dessert",
+    "type": "Dessert",
     "abilities": ["Donuts", "Coffee"],
-    "Artist": "Silvie Illustrations",
+    "artist": "Silvie Illustrations",
     "guildAffiliation": {
       "id": "GUILD-009",
       "name": "Order of the Cosmic Veil",
-      "guildMaster": "Celestial Mage",
-      "guildEmblemUrl": "https://example.com/images/guilds/cosmic-veil-emblem.jpg",
-      "foundedYear": 1423,
-      "motto": "Balance in All, All in Balance"
+      "country": "Balance in All, All in Balance"
     }
   },
   {
     "id": "No-005",
     "name": "Five Guys",
     "description": "A legendary knight who harnesses the ethereal powers of the Aether, wielding them to maintain balance across the realms.",
-    "Rating": 457,
+    "rating": 457,
     "isActive": true,
     "birthDate": "1567-03-05",
     "imageUrl": "https://github.com/s117507/WebOntwikkeling_Milestones/blob/main/EJS/Testing/public/assets/fiveguys.jpg?raw=true",
-    "Type": "Dessert",
+    "type": "Dessert",
     "abilities": ["Burgers", "Fries", "Bribing"],
-    "Artist": "Silvie Illustrations",
+    "artist": "Silvie Illustrations",
     "guildAffiliation": {
       "id": "GUILD-009",
       "name": "Order of the Cosmic Veil",
-      "guildMaster": "Celestial Mage",
-      "guildEmblemUrl": "https://example.com/images/guilds/cosmic-veil-emblem.jpg",
-      "foundedYear": 1423,
-      "motto": "Balance in All, All in Balance"
+      "country": "Balance in All, All in Balance"
     }
   },
   {
     "id": "No-006",
     "name": "Jack in the box",
     "description": "A legendary knight who harnesses the ethereal powers of the Aether, wielding them to maintain balance across the realms.",
-    "Rating": 457,
+    "rating": 457,
     "isActive": true,
     "birthDate": "1567-03-05",
     "imageUrl": "https://github.com/s117507/WebOntwikkeling_Milestones/blob/main/EJS/Testing/public/assets/jackinthebox.jpg?raw=true",
-    "Type": "Dessert",
+    "type": "Dessert",
     "abilities": ["Donuts", "Coffee"],
-    "Artist": "Silvie Illustrations",
+    "artist": "Silvie Illustrations",
     "guildAffiliation": {
       "id": "GUILD-009",
       "name": "Order of the Cosmic Veil",
-      "guildMaster": "Celestial Mage",
-      "guildEmblemUrl": "https://example.com/images/guilds/cosmic-veil-emblem.jpg",
-      "foundedYear": 1423,
-      "motto": "Balance in All, All in Balance"
+      "country": "Balance in All, All in Balance"
     }
   },
   {
     "id": "No-007",
     "name": "Jolibee",
     "description": "A legendary knight who harnesses the ethereal powers of the Aether, wielding them to maintain balance across the realms.",
-    "Rating": 457,
+    "rating": 457,
     "isActive": true,
     "birthDate": "1567-03-05",
     "imageUrl": "https://github.com/s117507/WebOntwikkeling_Milestones/blob/main/EJS/Testing/public/assets/jolibee.jpg?raw=true",
-    "Type": "Dessert",
+    "type": "Dessert",
     "abilities": ["Donuts", "Coffee"],
-    "Artist": "Silvie Illustrations",
+    "artist": "Silvie Illustrations",
     "guildAffiliation": {
       "id": "GUILD-009",
       "name": "Order of the Cosmic Veil",
-      "guildMaster": "Celestial Mage",
-      "guildEmblemUrl": "https://example.com/images/guilds/cosmic-veil-emblem.jpg",
-      "foundedYear": 1423,
-      "motto": "Balance in All, All in Balance"
+      "country": "Balance in All, All in Balance"
     }
   },
   {
     "id": "No-008",
     "name": "Kfc",
     "description": "A legendary knight who harnesses the ethereal powers of the Aether, wielding them to maintain balance across the realms.",
-    "Rating": 457,
+    "rating": 457,
     "isActive": true,
     "birthDate": "1567-03-05",
     "imageUrl": "https://github.com/s117507/WebOntwikkeling_Milestones/blob/main/EJS/Testing/public/assets/kfc.jpg?raw=true",
-    "Type": "Dessert",
+    "type": "Dessert",
     "abilities": ["Donuts", "Coffee"],
-    "Artist": "Silvie Illustrations",
+    "artist": "Silvie Illustrations",
     "guildAffiliation": {
       "id": "GUILD-009",
       "name": "Order of the Cosmic Veil",
-      "guildMaster": "Celestial Mage",
-      "guildEmblemUrl": "https://example.com/images/guilds/cosmic-veil-emblem.jpg",
-      "foundedYear": 1423,
-      "motto": "Balance in All, All in Balance"
+      "country": "Balance in All, All in Balance"
     }
   },
   {
     "id": "No-009",
     "name": "Krusty Krab",
     "description": "A legendary knight who harnesses the ethereal powers of the Aether, wielding them to maintain balance across the realms.",
-    "Rating": 457,
+    "rating": 457,
     "isActive": true,
     "birthDate": "1567-03-05",
     "imageUrl": "https://github.com/s117507/WebOntwikkeling_Milestones/blob/main/EJS/Testing/public/assets/krustykrab.jpg?raw=true",
-    "Type": "Dessert",
+    "type": "Dessert",
     "abilities": ["Donuts", "Coffee"],
-    "Artist": "Silvie Illustrations",
+    "artist": "Silvie Illustrations",
     "guildAffiliation": {
       "id": "GUILD-009",
       "name": "Order of the Cosmic Veil",
-      "guildMaster": "Celestial Mage",
-      "guildEmblemUrl": "https://example.com/images/guilds/cosmic-veil-emblem.jpg",
-      "foundedYear": 1423,
-      "motto": "Balance in All, All in Balance"
+      "country": "Balance in All, All in Balance"
     }
   },
   {
     "id": "No-010",
     "name": "Little Ceasars",
     "description": "A legendary knight who harnesses the ethereal powers of the Aether, wielding them to maintain balance across the realms.",
-    "Rating": 457,
+    "rating": 457,
     "isActive": true,
     "birthDate": "1567-03-05",
     "imageUrl": "https://github.com/s117507/WebOntwikkeling_Milestones/blob/main/EJS/Testing/public/assets/littleceasars.jpg?raw=true",
-    "Type": "Dessert",
+    "type": "Dessert",
     "abilities": ["Donuts", "Coffee"],
-    "Artist": "Silvie Illustrations",
+    "artist": "Silvie Illustrations",
     "guildAffiliation": {
       "id": "GUILD-009",
       "name": "Order of the Cosmic Veil",
-      "guildMaster": "Celestial Mage",
-      "guildEmblemUrl": "https://example.com/images/guilds/cosmic-veil-emblem.jpg",
-      "foundedYear": 1423,
-      "motto": "Balance in All, All in Balance"
+      "country": "Balance in All, All in Balance"
     }
   },
   {
     "id": "No-011",
     "name": "McDonalds",
     "description": "A legendary knight who harnesses the ethereal powers of the Aether, wielding them to maintain balance across the realms.",
-    "Rating": 457,
+    "rating": 457,
     "isActive": true,
     "birthDate": "1567-03-05",
     "imageUrl": "https://github.com/s117507/WebOntwikkeling_Milestones/blob/main/EJS/Testing/public/assets/mcdonalds.jpg?raw=true",
-    "Type": "Dessert",
+    "type": "Dessert",
     "abilities": ["Donuts", "Coffee"],
-    "Artist": "Silvie Illustrations",
+    "artist": "Silvie Illustrations",
     "guildAffiliation": {
       "id": "GUILD-009",
       "name": "Order of the Cosmic Veil",
-      "guildMaster": "Celestial Mage",
-      "guildEmblemUrl": "https://example.com/images/guilds/cosmic-veil-emblem.jpg",
-      "foundedYear": 1423,
-      "motto": "Balance in All, All in Balance"
+      "country": "Balance in All, All in Balance"
     }
   },
   {
     "id": "No-012",
     "name": "Panda Express",
     "description": "A legendary knight who harnesses the ethereal powers of the Aether, wielding them to maintain balance across the realms.",
-    "Rating": 457,
+    "rating": 457,
     "isActive": true,
     "birthDate": "1567-03-05",
     "imageUrl": "https://github.com/s117507/WebOntwikkeling_Milestones/blob/main/EJS/Testing/public/assets/pandaexpress.jpg?raw=true",
-    "Type": "Dessert",
+    "type": "Dessert",
     "abilities": ["Donuts", "Coffee"],
-    "Artist": "Silvie Illustrations",
+    "artist": "Silvie Illustrations",
     "guildAffiliation": {
       "id": "GUILD-009",
       "name": "Order of the Cosmic Veil",
-      "guildMaster": "Celestial Mage",
-      "guildEmblemUrl": "https://example.com/images/guilds/cosmic-veil-emblem.jpg",
-      "foundedYear": 1423,
-      "motto": "Balance in All, All in Balance"
+      "country": "Balance in All, All in Balance"
     }
   },
   {
     "id": "No-013",
     "name": "Pizza Hut",
     "description": "A legendary knight who harnesses the ethereal powers of the Aether, wielding them to maintain balance across the realms.",
-    "Rating": 457,
+    "rating": 457,
     "isActive": true,
     "birthDate": "1567-03-05",
     "imageUrl": "https://github.com/s117507/WebOntwikkeling_Milestones/blob/main/EJS/Testing/public/assets/pizzahut.jpg?raw=true",
-    "Type": "Dessert",
+    "type": "Dessert",
     "abilities": ["Donuts", "Coffee"],
-    "Artist": "Silvie Illustrations",
+    "artist": "Silvie Illustrations",
     "guildAffiliation": {
       "id": "GUILD-009",
       "name": "Order of the Cosmic Veil",
-      "guildMaster": "Celestial Mage",
-      "guildEmblemUrl": "https://example.com/images/guilds/cosmic-veil-emblem.jpg",
-      "foundedYear": 1423,
-      "motto": "Balance in All, All in Balance"
+      "country": "Balance in All, All in Balance"
     }
   },
   {
     "id": "No-014",
     "name": "StarBucks",
     "description": "A legendary knight who harnesses the ethereal powers of the Aether, wielding them to maintain balance across the realms.",
-    "Rating": 457,
+    "rating": 457,
     "isActive": true,
     "birthDate": "1567-03-05",
     "imageUrl": "https://github.com/s117507/WebOntwikkeling_Milestones/blob/main/EJS/Testing/public/assets/starbucks.jpg?raw=true",
-    "Type": "Dessert",
+    "type": "Dessert",
     "abilities": ["Donuts", "Coffee"],
-    "Artist": "Silvie Illustrations",
+    "artist": "Silvie Illustrations",
     "guildAffiliation": {
       "id": "GUILD-009",
       "name": "Order of the Cosmic Veil",
-      "guildMaster": "Celestial Mage",
-      "guildEmblemUrl": "https://example.com/images/guilds/cosmic-veil-emblem.jpg",
-      "foundedYear": 1423,
-      "motto": "Balance in All, All in Balance"
+      "country": "Balance in All, All in Balance"
     }
   },
   {
     "id": "No-015",
     "name": "Subway",
     "description": "A legendary knight who harnesses the ethereal powers of the Aether, wielding them to maintain balance across the realms.",
-    "Rating": 457,
+    "rating": 457,
     "isActive": true,
     "birthDate": "1567-03-05",
     "imageUrl": "https://github.com/s117507/WebOntwikkeling_Milestones/blob/main/EJS/Testing/public/assets/subway.jpg?raw=true",
-    "Type": "Dessert",
+    "type": "Dessert",
     "abilities": ["Donuts", "Coffee"],
-    "Artist": "Silvie Illustrations",
+    "artist": "Silvie Illustrations",
     "guildAffiliation": {
       "id": "GUILD-009",
       "name": "Order of the Cosmic Veil",
-      "guildMaster": "Celestial Mage",
-      "guildEmblemUrl": "https://example.com/images/guilds/cosmic-veil-emblem.jpg",
-      "foundedYear": 1423,
-      "motto": "Balance in All, All in Balance"
+      "country": "Balance in All, All in Balance"
     }
   },
   {
     "id": "No-016",
     "name": "TacoBell",
     "description": "A legendary knight who harnesses the ethereal powers of the Aether, wielding them to maintain balance across the realms.",
-    "Rating": 457,
+    "rating": 457,
     "isActive": true,
     "birthDate": "1567-03-05",
     "imageUrl": "https://github.com/s117507/WebOntwikkeling_Milestones/blob/main/EJS/Testing/public/assets/tacobell.jpg?raw=true",
-    "Type": "Dessert",
+    "type": "Dessert",
     "abilities": ["Donuts", "Coffee"],
-    "Artist": "Silvie Illustrations",
+    "artist": "Silvie Illustrations",
     "guildAffiliation": {
       "id": "GUILD-009",
       "name": "Order of the Cosmic Veil",
-      "guildMaster": "Celestial Mage",
-      "guildEmblemUrl": "https://example.com/images/guilds/cosmic-veil-emblem.jpg",
-      "foundedYear": 1423,
-      "motto": "Balance in All, All in Balance"
+      "country": "Balance in All, All in Balance"
     }
   },
   {
     "id": "No-017",
     "name": "Wendys",
     "description": "A legendary knight who harnesses the ethereal powers of the Aether, wielding them to maintain balance across the realms.",
-    "Rating": 457,
+    "rating": 457,
     "isActive": true,
     "birthDate": "1567-03-05",
     "imageUrl": "https://github.com/s117507/WebOntwikkeling_Milestones/blob/main/EJS/Testing/public/assets/wendys.jpg?raw=true",
-    "Type": "Dessert",
+    "type": "Dessert",
     "abilities": ["Donuts", "Coffee"],
-    "Artist": "Silvie Illustrations",
+    "artist": "Silvie Illustrations",
     "guildAffiliation": {
       "id": "GUILD-009",
       "name": "Order of the Cosmic Veil",
-      "guildMaster": "Celestial Mage",
-      "guildEmblemUrl": "https://example.com/images/guilds/cosmic-veil-emblem.jpg",
-      "foundedYear": 1423,
-      "motto": "Balance in All, All in Balance"
+      "country": "Balance in All, All in Balance"
     }
   }
 ]
