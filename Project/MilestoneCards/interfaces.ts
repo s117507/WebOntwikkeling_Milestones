@@ -9,10 +9,10 @@ export interface Cards {
     type: string;
     menu: string[];
     artist: string;
-    guildAffiliation: GuildAfiliation;
+    owner: Owner;
 }
 
-export interface GuildAfiliation {
+export interface Owner {
     id: string;
     name: string;
     country: string;

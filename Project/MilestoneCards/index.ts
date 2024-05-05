@@ -2,7 +2,7 @@ import express, { Express } from "express";
 import dotenv from "dotenv";
 import path from "path";
 import * as data from './card.json';
-import { Cards, GuildAfiliation } from "./interfaces";
+import { Cards, Owner } from "./interfaces";
 
 dotenv.config();
 
