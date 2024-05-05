@@ -126,7 +126,7 @@ app.post('/edit/:name', async (req, res) => {
             name,
             description,
             type,
-            rating: parseInt(rating) 
+            rating: parseInt(rating) // Assuming rating is a number
         };
 
         const result = await dbCollection.updateOne(
