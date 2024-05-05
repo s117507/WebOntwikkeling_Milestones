@@ -8,12 +8,12 @@
     "birthDate": "1953-07-28",  
     "imageUrl": "https://github.com/s117507/WebOntwikkeling_Milestones/blob/main/Project/MilestoneCards/public/assets/burgerking.jpg?raw=true",
     "type": "Fast Food",
-    "menu": ["Whopper", "Whopper Jr.", "Chicken Sandwich"],
+    "menu": ["Burgers", "Fries", "Nuggets"],
     "artist": "Silvie Illustrations",
     "owner": {
-      "id": "Owner-001",
-      "name": "Daniel S. Schwartz",
-      "country": "America"
+      "id": "GUILD-009",
+      "name": "Order of the Cosmic Veil",
+      "country": "Balance in All, All in Balance"
     }
   },
     {
@@ -25,12 +25,12 @@
       "birthDate": "1946-05-23",
       "imageUrl": "https://github.com/s117507/WebOntwikkeling_Milestones/blob/main/Project/MilestoneCards/public/assets/chickfila.jpg?raw=true",
       "type": "Fast Food",
-      "menu": ["Original Chicken Sandwich", "Spicy Chicken Sandwich"],
+      "menu": ["Burgers", "Fries", "Nuggets"],
       "artist": "Silvie Illustrations",
       "owner": {
-        "id": "Owner-002",
-        "name": "Dan T. Cathy",
-        "country": "America"
+        "id": "GUILD-009",
+        "name": "Order of the Cosmic Veil",
+        "country": "Balance in All, All in Balance"
      }
   },
   {
@@ -42,12 +42,12 @@
     "birthDate": "1960-12-09",
     "imageUrl": "https://github.com/s117507/WebOntwikkeling_Milestones/blob/main/Project/MilestoneCards/public/assets/dominos.jpg?raw=true",
     "type": "Fast Food",
-    "menu": ["Pepperoni Pizza", "Deluxe Pizza", "ExtravaganZZa Pizza"],
+    "menu": ["Pizza", "Fries", "Nuggets"],
     "artist": "Silvie Illustrations",
     "owner": {
-      "id": "Owner-003",
-      "name": "Ritch Allison",
-      "country": "America"
+      "id": "GUILD-009",
+      "name": "Order of the Cosmic Veil",
+      "country": "Balance in All, All in Balance"
     }
   },
   {
@@ -59,12 +59,12 @@
     "birthDate": "1743-01-24",
     "imageUrl": "https://github.com/s117507/WebOntwikkeling_Milestones/blob/main/Project/MilestoneCards/public/assets/dunkindonuts.jpg?raw=true",
     "type": "Dessert",
-    "menu": ["Dunkin' Original Blend", "Cappuccino",  "Donuts"],
+    "menu": ["Donuts", "Coffee"],
     "artist": "Silvie Illustrations",
     "owner": {
-      "id": "Owner-004",
-      "name": "David Hoffmann",
-      "country": "America"
+      "id": "GUILD-009",
+      "name": "Order of the Cosmic Veil",
+      "country": "Balance in All, All in Balance"
     }
   },
   {
@@ -75,13 +75,13 @@
     "isActive": true,
     "birthDate": "1867-11-14",
     "imageUrl": "https://github.com/s117507/WebOntwikkeling_Milestones/blob/main/Project/MilestoneCards/public/assets/fiveguys.jpg?raw=true",
-    "type": "Fast Food",
-    "menu": ["Five Guys Cheeseburger", "Bacon Cheeseburger", "Little Cheeseburger" ],
+    "type": "Dessert",
+    "menu": ["Burgers", "Fries", "Bribing"],
     "artist": "Silvie Illustrations",
     "owner": {
-      "id": "Owner-005",
-      "name": "Jerry Murrell",
-      "country": "America"
+      "id": "GUILD-009",
+      "name": "Order of the Cosmic Veil",
+      "country": "Balance in All, All in Balance"
     }
   },
   {
@@ -89,16 +89,16 @@
     "name": "Jack in the box",
     "description": "A fast-food chain recognized for its diverse menu featuring burgers, tacos, sandwiches, and breakfast items, often offering unique and innovative limited-time offerings alongside its staple offerings.",
     "rating": 3.8,
-    "isActive": false,
+    "isActive": true,
     "birthDate": "1967-05-19",
     "imageUrl": "https://github.com/s117507/WebOntwikkeling_Milestones/blob/main/Project/MilestoneCards/public/assets/jackinthebox.jpg?raw=true",
-    "type": "Fast Food",
-    "menu": ["Jumbo Jack Burger", "Ultimate Cheeseburger", "Sourdough Jack"],
+    "type": "Dessert",
+    "menu": ["Donuts", "Coffee"],
     "artist": "Silvie Illustrations",
     "owner": {
-      "id": "Owner-006",
-      "name": "Darin Harris",
-      "country": "America"
+      "id": "GUILD-009",
+      "name": "Order of the Cosmic Veil",
+      "country": "Balance in All, All in Balance"
     }
   },
   {
@@ -109,13 +109,13 @@
     "isActive": true,
     "birthDate": "1612-01-21",
     "imageUrl": "https://github.com/s117507/WebOntwikkeling_Milestones/blob/main/Project/MilestoneCards/public/assets/jolibee.jpg?raw=true",
-    "type": "Asian",
-    "menu": ["Chickenjoy", "Beefsteak Tagalog"],
+    "type": "Dessert",
+    "menu": ["Donuts", "Coffee"],
     "artist": "Silvie Illustrations",
     "owner": {
-      "id": "Owner-007",
-      "name": "Ernesto Tanmantiong",
-      "country": "Philippines"
+      "id": "GUILD-009",
+      "name": "Order of the Cosmic Veil",
+      "country": "Balance in All, All in Balance"
     }
   },
   {
@@ -126,13 +126,13 @@
     "isActive": true,
     "birthDate": "1967-09-13",
     "imageUrl": "https://github.com/s117507/WebOntwikkeling_Milestones/blob/main/Project/MilestoneCards/public/assets/kfc.jpg?raw=true",
-    "type": "Fast Food",
-    "menu": ["Original Recipe Chicken", "Extra Crispy Chicken", "Chicken Tenders"],
+    "type": "Dessert",
+    "menu": ["Donuts", "Coffee"],
     "artist": "Silvie Illustrations",
     "owner": {
-      "id": "Owner-008",
-      "name": "Tony Lowings",
-      "country": "America"
+      "id": "GUILD-009",
+      "name": "Order of the Cosmic Veil",
+      "country": "Balance in All, All in Balance"
     }
   },
   {
@@ -143,13 +143,13 @@
     "isActive": true,
     "birthDate": "1984-08-02",
     "imageUrl": "https://github.com/s117507/WebOntwikkeling_Milestones/blob/main/Project/MilestoneCards/public/assets/krustykrab.jpg?raw=true",
-    "type": "Fictional Food",
-    "menu": ["Krabby Patty", "Krabby Cheese", "Krabby Double"],
+    "type": "Dessert",
+    "menu": ["Donuts", "Coffee"],
     "artist": "Silvie Illustrations",
     "owner": {
-      "id": "Owner-009",
-      "name": "Mr Krabs",
-      "country": "Bikini Bottom"
+      "id": "GUILD-009",
+      "name": "Order of the Cosmic Veil",
+      "country": "Balance in All, All in Balance"
     }
   },
   {
@@ -160,13 +160,13 @@
     "isActive": true,
     "birthDate": "1797-02-19",
     "imageUrl": "https://github.com/s117507/WebOntwikkeling_Milestones/blob/main/Project/MilestoneCards/public/assets/littleceasars.jpg?raw=true",
-    "type": "Fast Food",
-    "menu": ["Classic Pepperoni Pizza", "Ultimate Supreme Pizza", "3 Meat Treat Pizza"],
+    "type": "Dessert",
+    "menu": ["Donuts", "Coffee"],
     "artist": "Silvie Illustrations",
     "owner": {
-      "id": "Owner-010",
-      "name": "David Scrivano",
-      "country": "America"
+      "id": "GUILD-009",
+      "name": "Order of the Cosmic Veil",
+      "country": "Balance in All, All in Balance"
     }
   },
   {
@@ -177,13 +177,13 @@
     "isActive": true,
     "birthDate": "1867-09-11",
     "imageUrl": "https://github.com/s117507/WebOntwikkeling_Milestones/blob/main/Project/MilestoneCards/public/assets/mcdonalds.jpg?raw=true",
-    "type": "Fast Food",
-    "menu": ["Big Mac", "Quarter Pounder", "McChicken Sandwich"],
+    "type": "Dessert",
+    "menu": ["Donuts", "Coffee"],
     "artist": "Silvie Illustrations",
     "owner": {
-      "id": "Owner-011",
-      "name": "Chris Kempczinski",
-      "country": "America"
+      "id": "GUILD-009",
+      "name": "Order of the Cosmic Veil",
+      "country": "Balance in All, All in Balance"
     }
   },
   {
@@ -194,13 +194,13 @@
     "isActive": true,
     "birthDate": "1839-04-17",
     "imageUrl": "https://github.com/s117507/WebOntwikkeling_Milestones/blob/main/Project/MilestoneCards/public/assets/pandaexpress.jpg?raw=true",
-    "type": "Asian",
-    "menu": ["Orange Chicken", "Beijing Beef", "Kung Pao Chicken"],
+    "type": "Dessert",
+    "menu": ["Donuts", "Coffee"],
     "artist": "Silvie Illustrations",
     "owner": {
-      "id": "Owner-009",
-      "name": "Andrew Cherng",
-      "country": "America"
+      "id": "GUILD-009",
+      "name": "Order of the Cosmic Veil",
+      "country": "Balance in All, All in Balance"
     }
   },
   {
@@ -208,16 +208,16 @@
     "name": "Pizza Hut",
     "description": "A renowned pizza chain known for its wide range of pizzas, pasta, wings, and sides, offering dine-in, delivery, and carryout options with a focus on convenience and variety.",
     "rating": 3.3,
-    "isActive": false,
+    "isActive": true,
     "birthDate": "1817-05-15",
     "imageUrl": "https://github.com/s117507/WebOntwikkeling_Milestones/blob/main/Project/MilestoneCards/public/assets/pizzahut.jpg?raw=true",
-    "type": "Fast Food",
-    "menu": ["Pepperoni Pizza", "Meat Lover's Pizza", "Supreme Pizza"],
+    "type": "Dessert",
+    "menu": ["Donuts", "Coffee"],
     "artist": "Silvie Illustrations",
     "owner": {
-      "id": "Owner-013",
-      "name": "Kevin Hochman",
-      "country": "America"
+      "id": "GUILD-009",
+      "name": "Order of the Cosmic Veil",
+      "country": "Balance in All, All in Balance"
     }
   },
   {
@@ -228,13 +228,13 @@
     "isActive": true,
     "birthDate": "1854-11-17",
     "imageUrl": "https://github.com/s117507/WebOntwikkeling_Milestones/blob/main/Project/MilestoneCards/public/assets/starbucks.jpg?raw=true",
-    "type": "Dessert/Coffee",
-    "menu": ["Caffè Americano", "Cappuccino", "Latte", "Mocha"],
+    "type": "Dessert",
+    "menu": ["Donuts", "Coffee"],
     "artist": "Silvie Illustrations",
     "owner": {
-      "id": "Owner-014",
-      "name": "Kevin Johnson",
-      "country": "America"
+      "id": "GUILD-009",
+      "name": "Order of the Cosmic Veil",
+      "country": "Balance in All, All in Balance"
     }
   },
   {
@@ -245,13 +245,13 @@
     "isActive": true,
     "birthDate": "1767-03-14",
     "imageUrl": "https://github.com/s117507/WebOntwikkeling_Milestones/blob/main/Project/MilestoneCards/public/assets/subway.jpg?raw=true",
-    "type": "Fast Food",
-    "menu": ["Italian B.M.T.", "Turkey Breast", "Subway Club"],
+    "type": "Dessert",
+    "menu": ["Donuts", "Coffee"],
     "artist": "Silvie Illustrations",
     "owner": {
-      "id": "Owner-015",
-      "name": "Fred DeLuca",
-      "country": "America"
+      "id": "GUILD-009",
+      "name": "Order of the Cosmic Veil",
+      "country": "Balance in All, All in Balance"
     }
   },
   {
@@ -259,16 +259,16 @@
     "name": "TacoBell",
     "description": "A fast-food chain famous for its Tex-Mex inspired menu featuring tacos, burritos, quesadillas, and other Mexican-inspired items, often offering bold flavors and innovative menu items.",
     "rating": 1.3,
-    "isActive": false,
+    "isActive": true,
     "birthDate": "1923-06-17",
     "imageUrl": "https://github.com/s117507/WebOntwikkeling_Milestones/blob/main/Project/MilestoneCards/public/assets/tacobell.jpg?raw=true",
-    "type": "Fast Food",
-    "menu": ["Crunchy Taco", "Doritos Locos Tacos", "Burrito Supreme"],
+    "type": "Dessert",
+    "menu": ["Donuts", "Coffee"],
     "artist": "Silvie Illustrations",
     "owner": {
-      "id": "Owner-016",
-      "name": "Glen Bell",
-      "country": "America"
+      "id": "GUILD-009",
+      "name": "Order of the Cosmic Veil",
+      "country": "Balance in All, All in Balance"
     }
   },
   {
@@ -280,12 +280,12 @@
     "birthDate": "1852-09-29",
     "imageUrl": "https://github.com/s117507/WebOntwikkeling_Milestones/blob/main/Project/MilestoneCards/public/assets/wendys.jpg?raw=true",
     "type": "Dessert",
-    "menu": ["Dave's Single Burger", "Spicy Chicken Sandwich", "Baconator"],
+    "menu": ["Donuts", "Coffee"],
     "artist": "Silvie Illustrations",
     "owner": {
-      "id": "Owner-017",
-      "name": "Dave Thomas",
-      "country": "America"
+      "id": "GUILD-009",
+      "name": "Order of the Cosmic Veil",
+      "country": "Balance in All, All in Balance"
     }
   }
 ]
