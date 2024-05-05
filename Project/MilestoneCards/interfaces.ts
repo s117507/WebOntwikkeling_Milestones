@@ -7,7 +7,7 @@ export interface Cards {
     birthDate: string; 
     imageUrl: string;
     type: string;
-    abilities: string[];
+    menu: string[];
     artist: string;
     guildAffiliation: GuildAfiliation;
 }

@@ -8,7 +8,7 @@
     "birthDate": "1953-07-28",  
     "imageUrl": "https://github.com/s117507/WebOntwikkeling_Milestones/blob/main/Project/MilestoneCards/public/assets/burgerking.jpg?raw=true",
     "type": "Fast Food",
-    "abilities": ["Burgers", "Fries", "Nuggets"],
+    "menu": ["Burgers", "Fries", "Nuggets"],
     "artist": "Silvie Illustrations",
     "guildAffiliation": {
       "id": "GUILD-009",
@@ -25,7 +25,7 @@
       "birthDate": "1946-05-23",
       "imageUrl": "https://github.com/s117507/WebOntwikkeling_Milestones/blob/main/Project/MilestoneCards/public/assets/chickfila.jpg?raw=true",
       "type": "Fast Food",
-      "abilities": ["Burgers", "Fries", "Nuggets"],
+      "menu": ["Burgers", "Fries", "Nuggets"],
       "artist": "Silvie Illustrations",
       "guildAffiliation": {
         "id": "GUILD-009",
@@ -42,7 +42,7 @@
     "birthDate": "1960-12-09",
     "imageUrl": "https://github.com/s117507/WebOntwikkeling_Milestones/blob/main/Project/MilestoneCards/public/assets/dominos.jpg?raw=true",
     "type": "Fast Food",
-    "abilities": ["Pizza", "Fries", "Nuggets"],
+    "menu": ["Pizza", "Fries", "Nuggets"],
     "artist": "Silvie Illustrations",
     "guildAffiliation": {
       "id": "GUILD-009",
@@ -59,7 +59,7 @@
     "birthDate": "1743-01-24",
     "imageUrl": "https://github.com/s117507/WebOntwikkeling_Milestones/blob/main/Project/MilestoneCards/public/assets/dunkindonuts.jpg?raw=true",
     "type": "Dessert",
-    "abilities": ["Donuts", "Coffee"],
+    "menu": ["Donuts", "Coffee"],
     "artist": "Silvie Illustrations",
     "guildAffiliation": {
       "id": "GUILD-009",
@@ -76,7 +76,7 @@
     "birthDate": "1867-11-14",
     "imageUrl": "https://github.com/s117507/WebOntwikkeling_Milestones/blob/main/Project/MilestoneCards/public/assets/fiveguys.jpg?raw=true",
     "type": "Dessert",
-    "abilities": ["Burgers", "Fries", "Bribing"],
+    "menu": ["Burgers", "Fries", "Bribing"],
     "artist": "Silvie Illustrations",
     "guildAffiliation": {
       "id": "GUILD-009",
@@ -93,7 +93,7 @@
     "birthDate": "1967-05-19",
     "imageUrl": "https://github.com/s117507/WebOntwikkeling_Milestones/blob/main/Project/MilestoneCards/public/assets/jackinthebox.jpg?raw=true",
     "type": "Dessert",
-    "abilities": ["Donuts", "Coffee"],
+    "menu": ["Donuts", "Coffee"],
     "artist": "Silvie Illustrations",
     "guildAffiliation": {
       "id": "GUILD-009",
@@ -110,7 +110,7 @@
     "birthDate": "1612-01-21",
     "imageUrl": "https://github.com/s117507/WebOntwikkeling_Milestones/blob/main/Project/MilestoneCards/public/assets/jolibee.jpg?raw=true",
     "type": "Dessert",
-    "abilities": ["Donuts", "Coffee"],
+    "menu": ["Donuts", "Coffee"],
     "artist": "Silvie Illustrations",
     "guildAffiliation": {
       "id": "GUILD-009",
@@ -127,7 +127,7 @@
     "birthDate": "1967-09-13",
     "imageUrl": "https://github.com/s117507/WebOntwikkeling_Milestones/blob/main/Project/MilestoneCards/public/assets/kfc.jpg?raw=true",
     "type": "Dessert",
-    "abilities": ["Donuts", "Coffee"],
+    "menu": ["Donuts", "Coffee"],
     "artist": "Silvie Illustrations",
     "guildAffiliation": {
       "id": "GUILD-009",
@@ -144,7 +144,7 @@
     "birthDate": "1984-08-02",
     "imageUrl": "https://github.com/s117507/WebOntwikkeling_Milestones/blob/main/Project/MilestoneCards/public/assets/krustykrab.jpg?raw=true",
     "type": "Dessert",
-    "abilities": ["Donuts", "Coffee"],
+    "menu": ["Donuts", "Coffee"],
     "artist": "Silvie Illustrations",
     "guildAffiliation": {
       "id": "GUILD-009",
@@ -161,7 +161,7 @@
     "birthDate": "1797-02-19",
     "imageUrl": "https://github.com/s117507/WebOntwikkeling_Milestones/blob/main/Project/MilestoneCards/public/assets/littleceasars.jpg?raw=true",
     "type": "Dessert",
-    "abilities": ["Donuts", "Coffee"],
+    "menu": ["Donuts", "Coffee"],
     "artist": "Silvie Illustrations",
     "guildAffiliation": {
       "id": "GUILD-009",
@@ -178,7 +178,7 @@
     "birthDate": "1867-09-11",
     "imageUrl": "https://github.com/s117507/WebOntwikkeling_Milestones/blob/main/Project/MilestoneCards/public/assets/mcdonalds.jpg?raw=true",
     "type": "Dessert",
-    "abilities": ["Donuts", "Coffee"],
+    "menu": ["Donuts", "Coffee"],
     "artist": "Silvie Illustrations",
     "guildAffiliation": {
       "id": "GUILD-009",
@@ -195,7 +195,7 @@
     "birthDate": "1839-04-17",
     "imageUrl": "https://github.com/s117507/WebOntwikkeling_Milestones/blob/main/Project/MilestoneCards/public/assets/pandaexpress.jpg?raw=true",
     "type": "Dessert",
-    "abilities": ["Donuts", "Coffee"],
+    "menu": ["Donuts", "Coffee"],
     "artist": "Silvie Illustrations",
     "guildAffiliation": {
       "id": "GUILD-009",
@@ -212,7 +212,7 @@
     "birthDate": "1817-05-15",
     "imageUrl": "https://github.com/s117507/WebOntwikkeling_Milestones/blob/main/Project/MilestoneCards/public/assets/pizzahut.jpg?raw=true",
     "type": "Dessert",
-    "abilities": ["Donuts", "Coffee"],
+    "menu": ["Donuts", "Coffee"],
     "artist": "Silvie Illustrations",
     "guildAffiliation": {
       "id": "GUILD-009",
@@ -229,7 +229,7 @@
     "birthDate": "1854-11-17",
     "imageUrl": "https://github.com/s117507/WebOntwikkeling_Milestones/blob/main/Project/MilestoneCards/public/assets/starbucks.jpg?raw=true",
     "type": "Dessert",
-    "abilities": ["Donuts", "Coffee"],
+    "menu": ["Donuts", "Coffee"],
     "artist": "Silvie Illustrations",
     "guildAffiliation": {
       "id": "GUILD-009",
@@ -246,7 +246,7 @@
     "birthDate": "1767-03-14",
     "imageUrl": "https://github.com/s117507/WebOntwikkeling_Milestones/blob/main/Project/MilestoneCards/public/assets/subway.jpg?raw=true",
     "type": "Dessert",
-    "abilities": ["Donuts", "Coffee"],
+    "menu": ["Donuts", "Coffee"],
     "artist": "Silvie Illustrations",
     "guildAffiliation": {
       "id": "GUILD-009",
@@ -263,7 +263,7 @@
     "birthDate": "1923-06-17",
     "imageUrl": "https://github.com/s117507/WebOntwikkeling_Milestones/blob/main/Project/MilestoneCards/public/assets/tacobell.jpg?raw=true",
     "type": "Dessert",
-    "abilities": ["Donuts", "Coffee"],
+    "menu": ["Donuts", "Coffee"],
     "artist": "Silvie Illustrations",
     "guildAffiliation": {
       "id": "GUILD-009",
@@ -280,7 +280,7 @@
     "birthDate": "1852-09-29",
     "imageUrl": "https://github.com/s117507/WebOntwikkeling_Milestones/blob/main/Project/MilestoneCards/public/assets/wendys.jpg?raw=true",
     "type": "Dessert",
-    "abilities": ["Donuts", "Coffee"],
+    "menu": ["Donuts", "Coffee"],
     "artist": "Silvie Illustrations",
     "guildAffiliation": {
       "id": "GUILD-009",
