@@ -5,7 +5,7 @@
     "description": "Burger King, a global fast-food chain, offers flame-grilled burgers and a variety of other menu items in a casual dining setting.",
     "rating": 457,
     "isActive": true,
-    "birthDate": "28-07-1954",
+    "birthDate": "1567-03-05",
     "imageUrl": "https://github.com/s117507/WebOntwikkeling_Milestones/blob/main/Project/MilestoneCards/public/assets/burgerking.jpg?raw=true",
     "type": "Fast Food",
     "abilities": ["Burgers", "Fries", "Nuggets"],

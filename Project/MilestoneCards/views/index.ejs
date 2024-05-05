@@ -21,6 +21,18 @@
         </form>
     </header>
     <main>
+        <form action="/" method="get">
+            <select name="sortField">
+                <option value="name" <%= sortField === "name" ? "selected" : "" %>>Name</option>
+                <option value="rating" <%= sortField === "rating" ? "selected" : "" %>>Rating</option>
+                <option value="birthDate" <%= sortField === "birthDate" ? "selected" : "" %>>Founded</option>
+            </select>
+            <select name="sortDirection">
+                <option value="asc" <%= sortDirection === "asc" ? "selected" : "" %>>Ascending</option>
+                <option value="desc" <%= sortDirection === "desc" ? "selected" : "" %>>Descending</option>
+            </select>
+            <button type="submit">Sort</button>
+        </form>
         <table id="cardTable">
             <thead>
                 <tr>
@@ -46,7 +58,7 @@
                             </a>
                         </td>
                         <td class="cell"><%= card.description %></td>
-                        <td class="cell"><%= card.rating %></td>
+                        <td class="cell"><button><%= card.rating %></td></button>
                         <td class="cell"><%= card.isActive ? 'Yes' : 'No' %></td>
                         <td class="cell"><%= new Date(card.birthDate).toLocaleDateString() %></td>
                         <td class="cell"><%= card.type %></td>

@@ -20,23 +20,38 @@ let cards: Cards[];
 
 app.get("/", async (req, res) => {
     let response = await fetch('https://raw.githubusercontent.com/s117507/WebOntwikkeling_Milestones/main/Project/MilestoneCards/card.json');
-    cards = await response.json(); 
+    cards = await response.json();
 
-    const { search } = req.query;
+    const { search, sortField, sortDirection } = req.query;
 
+    let filteredCards = cards;
     if (search) {
-        const filteredCards = cards.filter(card => card.name.toLowerCase().includes(search.toString().toLowerCase()));
-        res.render("index", {
-            title: "Card Game",
-            cards: filteredCards
-        });
-    } else {
-        res.render("index", {
-            title: "Card Game",
-            cards
+        filteredCards = filteredCards.filter(card => card.name.toLowerCase().includes(search.toString().toLowerCase()));
+    }
+
+    if (sortField && sortDirection) {
+        filteredCards = filteredCards.sort((a, b) => {
+            if (sortField === "name") {
+                return sortDirection === "asc" ? a.name.localeCompare(b.name) : b.name.localeCompare(a.name);
+            } else if (sortField === "rating") {
+                return sortDirection === "asc" ? a.rating - b.rating : b.rating - a.rating;
+            } else if (sortField === "birthDate") {
+                return sortDirection === "asc" ? new Date(a.birthDate).getTime() - new Date(b.birthDate).getTime() : new Date(b.birthDate).getTime() - new Date(a.birthDate).getTime();
+            } else {
+                return 0;
+            }
         });
     }
+
+    res.render("index", {
+        title: "Card Game",
+        cards: filteredCards,
+        search: search || "", 
+        sortField: sortField || "name",
+        sortDirection: sortDirection || "asc" 
+    });
 });
+
 
 
 
