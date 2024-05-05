@@ -14,6 +14,7 @@ grid-template-areas:
     "Footer";
 height: 100vh;
 width: 100vw;
+background-color: #d8e1e8;
 }
 
 header {
@@ -85,9 +86,15 @@ button {
 }
 
 img {
-  width: 125px;
+  width: 200px;
   height: auto;
 }
+
+td a {
+  text-decoration: none;
+  color: black;
+}
+
 
 /* Tables */
 table{
@@ -122,6 +129,10 @@ tr:nth-child(even) {
 }
 
 tr:nth-child(even) td {
+  color: white;
+}
+
+tr:nth-child(even) td a{
   color: white;
 }
 
