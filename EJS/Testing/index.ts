@@ -17,28 +17,14 @@ app.set("views", path.join(__dirname, "views"));
 app.set("port", process.env.PORT ?? 3000);
 
 app.get("/", (req, res) => {
-    const html = `
-    <header class="navbar">
-        <img src="assets/478d8e49233e7de64a3cbb875e526807.png" alt="Logo">
-        <nav>
-            <ul>
-                <li><a href="guesspokemon.html">Speel</a></li>
-                <li><a href="overzicht.html">Overzicht</a></li>
-                <li><a href="teamplanner.html">TeamPlanner</a></li>
-                <li><a href="index.html">Uitloggen</a></li>
-            </ul>
-        </nav>
-    </header>`;
-
     res.render("index", {
-        title: "Card Game",
-        navbar: html 
+        title: "Card Game"
     });
 });
 
-app.get("/", (req: Request, res: Response) => {
+app.get("/", (req, res) => {
     try {
-        const cards: Cards[] = data; // Using the imported JSON data
+        const cards : Cards[] = data; // Using the imported JSON data
         res.render('index', { cards }); // Passing the 'cards' variable to the EJS template
     } catch (error) {
         console.error('Error fetching data:', error);

@@ -1,15 +1,15 @@
 export interface Cards {
-id: string;
-name: string;
-description: string;
-rating: number;
-isActive: boolean;
-birthDate: string;
-imageUrl: string;
-type: string;
-abilities: string[];
-artist: string;
-guildAffiliation: GuildAfiliation;
+    id: string;
+    name: string;
+    description: string;
+    rating: number;
+    isActive: boolean;
+    birthDate: string; // Change type to string
+    imageUrl: string;
+    type: string;
+    abilities: string[];
+    artist: string;
+    guildAffiliation: GuildAfiliation;
 }
 
 export interface GuildAfiliation {
@@ -17,4 +17,3 @@ export interface GuildAfiliation {
     name: string;
     country: string;
 }
-
