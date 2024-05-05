@@ -1,9 +1,9 @@
 import express, { Express, Request, Response } from "express";
 import dotenv from "dotenv";
 import path from "path";
-import { Cards } from "./interfaces";
-import { MongoClient, Collection } from 'mongodb';
 import fetch from 'node-fetch';
+import { Cards } from "./interfaces";
+import { MongoClient } from 'mongodb';
 
 dotenv.config();
 
@@ -16,8 +16,8 @@ app.use(express.static(path.join(__dirname, "public")));
 app.set("views", path.join(__dirname, "views"));
 app.set("port", process.env.PORT ?? 3000);
 
+let cards: Cards[] = [];
 let mijnProject: MongoClient;
-let dbCollection: Collection<Cards>;
 
 const uri = process.env.MONGODB_URI || 'mongodb+srv://estalistrinev:tPqvaqEIdP7z9KM1@mijnproject.udzcq5y.mongodb.net/';
 const client = new MongoClient(uri);
@@ -31,134 +31,69 @@ async function startServer() {
     }
 }
 
-async function insertCardsIntoDB() {
-    try {
-        const count = await dbCollection.countDocuments();
-        if (count === 0) {
-            const response = await fetch('https://raw.githubusercontent.com/s117507/WebOntwikkeling_Milestones/main/Project/MilestoneCards/card.json');
-            const cards: Cards[] = await response.json();
-            await dbCollection.insertMany(cards);
-
-            console.log('Data inserted into MongoDB');
-        } else {
-            console.log('Data already exists in MongoDB');
-        }
-    } catch (error) {
-        console.error('Error inserting data into MongoDB:', error);
-    }
-}
-
-
 (async () => {
     try {
         await client.connect();
         mijnProject = client;
-        dbCollection = mijnProject.db().collection('cards'); 
-
         console.log('Connected to MongoDB');
 
-        await insertCardsIntoDB();
+        // Fetch cards data
+        const response = await fetch('https://raw.githubusercontent.com/s117507/WebOntwikkeling_Milestones/main/Project/MilestoneCards/card.json');
+        const jsonResponse = await response.json();
+        cards = jsonResponse as Cards[];
+
+        if (mijnProject) {
+            await mijnProject.db().collection('cards').insertMany(cards);
+            console.log('Inserted cards into MongoDB');
+        } else {
+            console.error('Error: mijnProject is not initialized');
+        }
+        
         await startServer();
+
     } catch (error) {
         console.error('Error:', error);
     }
 })();
 
-app.get("/", async (req, res) => {
-    try {
-        const { search, sortField, sortDirection } = req.query;
+app.get("/", async (req: Request, res: Response) => {
+    const { search, sortField, sortDirection } = req.query;
 
-        let filteredCards = await dbCollection.find({}).toArray();
+    let filteredCards = cards;
+    if (search) {
+        filteredCards = filteredCards.filter(card => card.name.toLowerCase().includes(search.toString().toLowerCase()));
+    }
 
-        if (search) {
-            filteredCards = filteredCards.filter((card: Cards) => card.name.toLowerCase().includes(search.toString().toLowerCase()));
-        }
-
-        if (sortField && sortDirection) {
-            filteredCards = filteredCards.sort((a: Cards, b: Cards) => {
-                if (sortField === "name") {
-                    return sortDirection === "asc" ? a.name.localeCompare(b.name) : b.name.localeCompare(a.name);
-                } else if (sortField === "rating") {
-                    return sortDirection === "asc" ? a.rating - b.rating : b.rating - a.rating;
-                } else if (sortField === "birthDate") {
-                    return sortDirection === "asc" ? new Date(a.birthDate).getTime() - new Date(b.birthDate).getTime() : new Date(b.birthDate).getTime() - new Date(a.birthDate).getTime();
-                } else {
-                    return 0;
-                }
-            });
-        }
-
-        res.render("index", {
-            title: "Card Game",
-            cards: filteredCards,
-            search: search || "", 
-            sortField: sortField || "name",
-            sortDirection: sortDirection || "asc" 
+    if (sortField && sortDirection) {
+        filteredCards = filteredCards.sort((a, b) => {
+            if (sortField === "name") {
+                return sortDirection === "asc" ? a.name.localeCompare(b.name) : b.name.localeCompare(a.name);
+            } else if (sortField === "rating") {
+                return sortDirection === "asc" ? a.rating - b.rating : b.rating - a.rating;
+            } else if (sortField === "birthDate") {
+                return sortDirection === "asc" ? new Date(a.birthDate).getTime() - new Date(b.birthDate).getTime() : new Date(b.birthDate).getTime() - new Date(a.birthDate).getTime();
+            } else {
+                return 0;
+            }
         });
-    } catch (error) {
-        console.error('Error:', error);
-        res.status(500).send('Internal Server Error');
     }
+
+    res.render("index", {
+        title: "Card Game",
+        cards: filteredCards,
+        search: search || "",
+        sortField: sortField || "name",
+        sortDirection: sortDirection || "asc"
+    });
 });
 
-app.get('/edit/:name', async (req, res) => {
-    try {
-        const cardName = req.params.name;
-        const card = await dbCollection.findOne({ name: cardName });
+app.get('/detail/:name', async(req: Request, res: Response) => {
+    const cardName = req.params.name;
+    const card: Cards | undefined = cards.find((card) => card.name === cardName);
 
-        if (!card) {
-            return res.status(404).send("Card not found");
-        }
-
-        res.render('edit', { title: 'Edit Card', card });
-    } catch (error) {
-        console.error('Error:', error);
-        res.status(500).send('Internal Server Error');
-    }
+    res.render('detail', { title: 'Card Details', card });
 });
 
-app.post('/edit/:name', async (req, res) => {
-    try {
-        const cardName = req.params.name;
-        const { name, description, type, rating } = req.body;
-
-        const updatedCard = {
-            name,
-            description,
-            type,
-            rating: parseInt(rating) // Assuming rating is a number
-        };
-
-        const result = await dbCollection.updateOne(
-            { name: cardName },
-            { $set: updatedCard }
-        );
-
-        if (result.modifiedCount === 1) {
-            console.log('Card updated successfully');
-            res.redirect('/');
-        } else {
-            console.error('Failed to update card');
-            res.status(500).send('Failed to update card');
-        }
-    } catch (error) {
-        console.error('Error:', error);
-        res.status(500).send('Internal Server Error');
-    }
-});
-
-app.get('/detail/:name', async(req, res) => {
-    try {
-        const cardName = req.params.name;
-        const card = await dbCollection.findOne({ name: cardName });
-
-        res.render('detail', { title: 'Card Details', card });
-    } catch (error) {
-        console.error('Error:', error);
-        res.status(500).send('Internal Server Error');
-    }
-});
-
-app.use((req, res) => {
+app.use((req: Request, res: Response) => {
     res.status(404).send("Sorry, the page you are looking for does not exist.");
 });
