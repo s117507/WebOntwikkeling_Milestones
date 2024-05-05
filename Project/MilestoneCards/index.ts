@@ -17,7 +17,7 @@ app.set("views", path.join(__dirname, "views"));
 app.set("port", process.env.PORT ?? 3000);
 
 app.get("/", async(req, res) => {
-    let response = await fetch('https://raw.githubusercontent.com/s117507/WebOntwikkeling_Milestones/main/EJS/Testing/card.json')
+    let response = await fetch('https://raw.githubusercontent.com/s117507/WebOntwikkeling_Milestones/main/Project/MilestoneCards/card.json')
     let cards : Cards[] = await response.json();
 
     res.render("index", {
