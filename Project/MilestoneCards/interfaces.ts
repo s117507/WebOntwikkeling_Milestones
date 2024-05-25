@@ -1,5 +1,8 @@
+import { ObjectId } from "mongodb";
+
 export interface Cards {
-    id: string;
+    _id?: ObjectId; 
+    id: string; 
     name: string;
     description: string;
     rating: number;

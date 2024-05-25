@@ -3,6 +3,7 @@ import dotenv from "dotenv";
 import path from "path";
 import * as data from './card.json';
 import { Cards, Owner } from "./interfaces";
+import { MongoClient } from "mongodb";
 
 dotenv.config();
 
@@ -15,6 +16,20 @@ app.use(express.static(path.join(__dirname, "public")));
 app.set("views", path.join(__dirname, "views"));
 
 app.set("port", process.env.PORT ?? 3000);
+
+const uri = "mongodb+srv://estalistrinev:tPqvaqEIdP7z9KM1@mijnproject.udzcq5y.mongodb.net/?retryWrites=true&w=majority&appName=mijnProject"
+const client = new MongoClient(uri);
+
+async function main() {
+    try {
+        await client.connect();
+        console.log("Connected to mongoDB");
+    } catch (e) {
+        console.error(e);
+    } finally {
+        await client.close();
+    }
+}
 
 let cards: Cards[]; 
 
