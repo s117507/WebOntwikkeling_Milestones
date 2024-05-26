@@ -20,3 +20,10 @@ export interface Owner {
     name: string;
     country: string;
 }
+
+export interface User {
+    _id?: ObjectId;
+    username: string;
+    password?: string;
+    role: "ADMIN" | "USER";
+}

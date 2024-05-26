@@ -2,10 +2,12 @@ import express, { Express } from "express";
 import dotenv from "dotenv";
 import path from "path";
 import * as data from './card.json';
-import { Cards, Owner } from "./interfaces";
+import { Cards, Owner, User } from "./interfaces";
 import { MongoClient } from "mongodb";
-import { connect, getCards, updateCard, getCardByName } from "./database";
+import { connect, getCards, updateCard, getCardByName, login } from "./database";
 import { title } from "process";
+import bycrypt from 'bcrypt'
+import session from "./session";
 
 dotenv.config();
 
@@ -13,6 +15,7 @@ const app : Express = express();
 
 app.set("view engine", "ejs");
 app.use(express.json());
+app.use(session);
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, "public")));
 app.set("views", path.join(__dirname, "views"));
@@ -24,6 +27,9 @@ const client = new MongoClient(uri);
 
 
 app.get("/", async (req, res) => {
+    if (req.session.user) {
+        
+    
     let cards : Cards[] = await getCards();
 
     const { search, sortField, sortDirection } = req.query;
@@ -48,12 +54,16 @@ app.get("/", async (req, res) => {
     }
 
     res.render("index", {
+        user: req.session.user,
         title: "Card Game",
         cards: filteredCards,
         search: search || "", 
         sortField: sortField || "name",
         sortDirection: sortDirection || "asc" 
     });
+    } else {
+        res.redirect("login");
+    }
 });
 
 
@@ -102,9 +112,24 @@ app.get('/form/:name/edit', async (req, res) => {
     });
   })
 
-  app.get('/inlog', async  (req, res) => {
-    res.render('inlog');
+  app.get('/login', async  (req, res) => {
+    res.render('login', {
+        title: login
+    });
   })
+
+  app.post("/login", async(req, res) => {
+    const username : string = req.body.username;
+    const password : string = req.body.password;
+    try {
+        let user : User = await login(username, password);
+        delete user.password; 
+        req.session.user = username;
+        res.redirect("/")
+    } catch (e : any) {
+        res.redirect("/login");
+    }
+});
 
 app.listen(3000, async () => {
     await connect();

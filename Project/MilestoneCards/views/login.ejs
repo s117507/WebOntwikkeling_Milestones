@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("partials/head") %>
+  <body>
+    <%- include("partials/header") %>
+    <main>
+      <section class="center-container">
+        <article class="form-container">
+          <h1>Inloggen</h1>
+          <form action="/register" method="POST">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <a href="/registratie">Registreer!</a>
+
+            <button type="submit">Submit</button>
+          </form>
+        </article>
+      </section>
+    </main>
+    <footer>
+    </footer>
+  </body>
+</html>
