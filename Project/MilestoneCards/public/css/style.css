@@ -225,16 +225,22 @@ ul {
 
 /* form */
 
+#editform {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 .form-container {
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 20px;
-  margin: 20px auto;
+  margin: 5em auto; /* Adjust margin to center vertically */
   max-width: 400px;
   background-color: #536872;
   text-align: center;
   color: white;
-  margin-top: 5em;
 }
 
 .form-container h1 {
