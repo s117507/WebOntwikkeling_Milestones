@@ -4,6 +4,7 @@ import path from "path";
 import * as data from './card.json';
 import { Cards, Owner } from "./interfaces";
 import { MongoClient } from "mongodb";
+import { connect, getCards } from "./database";
 
 dotenv.config();
 
@@ -20,22 +21,9 @@ app.set("port", process.env.PORT ?? 3000);
 const uri = "mongodb+srv://estalistrinev:tPqvaqEIdP7z9KM1@mijnproject.udzcq5y.mongodb.net/?retryWrites=true&w=majority&appName=mijnProject"
 const client = new MongoClient(uri);
 
-async function main() {
-    try {
-        await client.connect();
-        console.log("Connected to mongoDB");
-    } catch (e) {
-        console.error(e);
-    } finally {
-        await client.close();
-    }
-}
-
-let cards: Cards[]; 
 
 app.get("/", async (req, res) => {
-    let response = await fetch('https://raw.githubusercontent.com/s117507/WebOntwikkeling_Milestones/main/Project/MilestoneCards/card.json');
-    cards = await response.json();
+    let cards : Cards[] = await getCards();
 
     const { search, sortField, sortDirection } = req.query;
 
@@ -73,6 +61,8 @@ app.get("/", async (req, res) => {
 
 
 app.get('/detail/:name', async(req, res) => {
+    let cards : Cards[] = await getCards();
+
     const cardName = req.params.name;
     const card: Cards | undefined = cards.find((card) => card.name === cardName);
 
@@ -80,6 +70,7 @@ app.get('/detail/:name', async(req, res) => {
     res.render('detail', { title: 'Card Details', card });
 });
 
-app.listen(app.get("port"), () => {
+app.listen(3000, async () => {
+    await connect();
     console.log("Server started on http://localhost:" + app.get("port"));
 });
