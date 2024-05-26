@@ -67,8 +67,20 @@ app.get('/detail/:name', async(req, res) => {
     const card: Cards | undefined = cards.find((card) => card.name === cardName);
 
 
-    res.render('detail', { title: 'Card Details', card });
+    res.render('detail', { 
+        title: 'Card Details', 
+        card });
 });
+
+app.get('/form/:name', async(req, res) => {
+    let cards : Cards[] = await getCards();
+    const cardName = req.params.name;
+    const card: Cards | undefined = cards.find((card) => card.name === cardName);
+
+    res.render('form', {
+        card
+    });
+})
 
 app.listen(3000, async () => {
     await connect();

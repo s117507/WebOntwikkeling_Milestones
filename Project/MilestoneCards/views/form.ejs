@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include("partials/header") %>
+<body>
+    <section>
+        <h1>Update Card: <%= card.name %></h1>
+        <form action="/form/<%= card.name %>/update" method="POST">
+        <article>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" value="<%= card.name %>" required>
+        </article>
+        <article>
+            <label for="description" >Description:</label>
+            <input type="text" id="description" description="description" value="<%= card.description" required>
+        </article>
+        <article>
+            <label for="rating">Rating:</label>
+            <input type="text" id="rating" rating="rating" value="<%= card.rating %>" required>
+        </article>
+        <article>
+            <label for="type">Type:</label>
+            <input type="text" id="type" type="type" value="<%= card.type %>" required>
+        </article>
+        <button type="submit">Update Card</button>
+        </form>
+    </section>
+</body>
+</html>        

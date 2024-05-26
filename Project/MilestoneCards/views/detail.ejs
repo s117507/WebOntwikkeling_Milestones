@@ -1,19 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
-    <title><%= title %></title>
-</head>
-<body>
-    <header class="navbar">
-        <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-            </ul>
-        </nav>
-    </header>
+    <%- include("partials/header") %>
     <main>
         <% if (card) { %>
             <section class="card">
@@ -21,6 +8,7 @@
                 <img src="<%= card.imageUrl %>" alt="<%= card.name %>">
                 <article class="card-info">
                     <p><%= card.description %></p>
+                    <hr>
                     <br>
                     <br>
                     <p><strong>Rating:</strong> <%= card.rating %></p>
@@ -30,13 +18,15 @@
                     <p><strong>Menu:</strong> <%= card.menu.join(', ') %></p>
                     <p><strong>Artist:</strong> <%= card.artist %></p>
                     <div class="guild-info">
-                        <p><strong>Guild Affiliation:</strong></p>
+                        <p><strong>CEO:</strong></p>
+                        <hr>
                         <ul>
-                            <li><strong>ID:</strong> <%= card.owner.id %></li>
                             <li><strong>Name:</strong> <%= card.owner.name %></li>
                             <li><strong>Country:</strong> <%= card.owner.country %></li>
                         </ul>
                     </div>
+                    <hr>
+                    <a href="/form"><button id="edit">Edit</button></a>
                 </article>
             </section>
         <% } else { %>
