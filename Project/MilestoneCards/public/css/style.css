@@ -4,32 +4,32 @@
   padding: 0;
 }
 
-html,
-body {
-font-family: Arial, Helvetica, sans-serif;
-display: grid;
-grid-template-areas:
-    "Header"
-    "Main"
-    "Footer";
-height: 100vh;
-width: 100vw;
-background-color: #d8e1e8;
+html, body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: grid;
+  grid-template-areas:
+      "Header"
+      "Main"
+      "Footer";
+  height: 100vh;
+  width: 100vw;
+  background-color: #d8e1e8;
 }
 
 header {
-  grid-area: Header;
-  background-color: 	#36454f;
+  width: 100%;
+  background-color: #36454f;
 }
 
 main {
-  grid-area: Main;
-  margin: 3em 0 0 0;
+  width: 100%;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 footer {
-  grid-area: Footer;
+  width: 100%;
   background-color: #17213a;
   text-align: center;
   padding: 1em;
@@ -99,11 +99,11 @@ hr {
   margin-bottom: 5px;
 }
 
-
 /* Tables */
-table{
+table {
   width: 100%;
   border-collapse: collapse;
+  margin-top: 5em;
 }
 
 thead th {
@@ -136,7 +136,7 @@ tr:nth-child(even) td {
   color: white;
 }
 
-tr:nth-child(even) td a{
+tr:nth-child(even) td a {
   color: white;
 }
 
@@ -165,12 +165,11 @@ li {
 }
 
 /* card */
-
 .card {
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 20px;
-  margin: 20px auto;
+  margin: 40px auto;
   max-width: 400px;
   background-color: #536872;
   text-align: center;
@@ -225,18 +224,18 @@ ul {
 
 /* form */
 
-#editform {
+.center-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100%;
+  width: 100%;
 }
 
 .form-container {
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 20px;
-  margin: 5em auto; /* Adjust margin to center vertically */
   max-width: 400px;
   background-color: #536872;
   text-align: center;
@@ -244,7 +243,7 @@ ul {
 }
 
 .form-container h1 {
-  margin-bottom: 3px;
+  margin-bottom: 20px;
 }
 
 .form-container label {
@@ -255,14 +254,16 @@ ul {
 
 .form-container input[type="text"],
 .form-container input[type="password"],
-.form-container input[type="email"],
-.form-container textarea,
 .form-container button {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
   border-radius: 4px;
   border: 1px solid #ccc;
+}
+
+textarea {
+  width: 100%;
 }
 
 .form-container button {
@@ -275,7 +276,7 @@ ul {
 
 @media (max-width: 768px) {
   .card {
-      max-width: 90%;
+    max-width: 90%;
   }
   .form-container {
     max-width: 90%;

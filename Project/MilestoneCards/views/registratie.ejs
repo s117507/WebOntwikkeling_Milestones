@@ -3,20 +3,23 @@
   <%- include("partials/head") %>
   <body>
     <%- include("partials/header") %>
-        <main>
-            <section>
-                <article>
-                    <form action="">
-                        <label for="Name">Name</label>
-                        <input type="text">
+    <main>
+      <section class="center-container">
+        <article class="form-container">
+          <h1>Registratie</h1>
+          <form action="/register" method="POST">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
 
-                        <label for="">Password</label>
-                        <input type="password">
-                    </form>
-                </article>
-            </section>
-        </main>
-        <footer>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
 
-        </footer>
-    </body>
+            <button type="submit">Submit</button>
+          </form>
+        </article>
+      </section>
+    </main>
+    <footer>
+    </footer>
+  </body>
+</html>
