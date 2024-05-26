@@ -96,6 +96,16 @@ app.get('/form/:name/edit', async (req, res) => {
     res.redirect(`/detail/${cardName}`);
   });
 
+  app.get('/registratie', async  (req, res) => {
+    res.render('registratie', {
+        title: "registratie"
+    });
+  })
+
+  app.get('/inlog', async  (req, res) => {
+    res.render('inlog');
+  })
+
 app.listen(3000, async () => {
     await connect();
     console.log("Server started on http://localhost:" + app.get("port"));

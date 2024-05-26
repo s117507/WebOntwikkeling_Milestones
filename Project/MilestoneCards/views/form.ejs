@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-  <%- include("partials/header") %>
+  <%- include("partials/head") %>
   <body>
+    <%- include("partials/header") %>
+    <main>
     <section>
       <h1>Update Card: <%= card.name %></h1>
-      <div class="form-container">
+      <article class="form-container">
         <form action="/form/<%= card.name %>/update" method="POST">
           <label for="name">Name:</label>
           <input type="text" id="name" name="name" value="<%= card.name %>" required>
@@ -20,7 +22,8 @@
           
           <button type="submit">Update Card</button>
         </form>
-      </div>
+      </article>
     </section>
+    </main>
   </body>
 </html>
