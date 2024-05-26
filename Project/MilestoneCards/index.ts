@@ -4,7 +4,8 @@ import path from "path";
 import * as data from './card.json';
 import { Cards, Owner } from "./interfaces";
 import { MongoClient } from "mongodb";
-import { connect, getCards } from "./database";
+import { connect, getCards, updateCard, getCardByName } from "./database";
+import { title } from "process";
 
 dotenv.config();
 
@@ -72,15 +73,28 @@ app.get('/detail/:name', async(req, res) => {
         card });
 });
 
-app.get('/form/:name', async(req, res) => {
-    let cards : Cards[] = await getCards();
+app.get('/form/:name/edit', async (req, res) => {
     const cardName = req.params.name;
-    const card: Cards | undefined = cards.find((card) => card.name === cardName);
-
-    res.render('form', {
-        card
+    const card: Cards | null = await getCardByName(cardName);
+  
+    res.render('form', { 
+      title: "Update Card",  
+      card 
     });
-})
+  });
+  
+  app.post('/form/:name/update', async (req, res) => {
+    const cardName = req.params.name;
+    const updatedData = {
+      name: req.body.name,
+      description: req.body.description,
+      rating: parseInt(req.body.rating, 10),
+      type: req.body.type,
+    };
+  
+    await updateCard(cardName, updatedData);
+    res.redirect(`/detail/${cardName}`);
+  });
 
 app.listen(3000, async () => {
     await connect();

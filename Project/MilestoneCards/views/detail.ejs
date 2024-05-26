@@ -10,7 +10,6 @@
                     <p><%= card.description %></p>
                     <hr>
                     <br>
-                    <br>
                     <p><strong>Rating:</strong> <%= card.rating %></p>
                     <p><strong>Active:</strong> <%= card.isActive ? 'Yes' : 'No' %></p>
                     <p><strong>Birth Date:</strong> <%= new Date(card.birthDate).toLocaleDateString() %></p>
@@ -26,7 +25,7 @@
                         </ul>
                     </div>
                     <hr>
-                    <a href="/form"><button id="edit">Edit</button></a>
+                    <a href="/form/<%= card.name %>/edit"><button id="edit">Edit</button></a>
                 </article>
             </section>
         <% } else { %>

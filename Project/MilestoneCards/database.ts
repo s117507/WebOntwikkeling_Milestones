@@ -27,6 +27,14 @@ export async function loadCardsFromDb() {
     }
 }
 
+export async function updateCard(name: string, updatedData: Partial<Cards>) {
+    return await cardsCollection.updateOne({ name: name }, { $set: updatedData });
+  }
+
+export async function getCardByName(name: string) {
+    return await cardsCollection.findOne({ name: name });
+  }  
+
 export async function connect() {
     try {
         await client.connect();
