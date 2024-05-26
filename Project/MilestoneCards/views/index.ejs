@@ -58,7 +58,13 @@
                         <td class="cell"><%= card.isActive ? 'Yes' : 'No' %></td>
                         <td class="cell"><%= new Date(card.birthDate).toLocaleDateString() %></td>
                         <td class="cell"><%= card.type %></td>
-                        <td class="cell"><%= card.menu.join(', ') %></td>
+                        <td class="cell">
+                            <ul>
+                                <% card.menu.forEach(item => { %>
+                                    <li><%= item %></li>
+                                <% }) %>
+                            </ul>
+                        </td>
                         <td class="cell"><%= card.artist %></td>
                         <td class="cell"><%= card.owner.name %></td>
                     </tr>

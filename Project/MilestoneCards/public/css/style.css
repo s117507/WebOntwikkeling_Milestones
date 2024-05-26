@@ -136,6 +136,9 @@ tr:nth-child(even) td a{
   color: white;
 }
 
+td:nth-child(2) {
+  text-align: left;
+}
 
 th {
   padding: 0 1em 0 1em;
@@ -195,6 +198,11 @@ tr {
 
 .guild-info li {
   margin-bottom: 5px;
+}
+
+ul {
+  list-style: none;
+  text-align: left;
 }
 
 @media (max-width: 768px) {
