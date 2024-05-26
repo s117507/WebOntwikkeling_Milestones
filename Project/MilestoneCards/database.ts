@@ -31,6 +31,31 @@ async function createInitialUser() {
     })
 }
 
+export async function registerUser(
+    username: string,
+    password: string
+  ): Promise<void> {
+    try {
+      const existingUser = await userCollection.findOne({ username });
+  
+      if (existingUser) {
+        throw new Error("Username already exists");
+      }
+  
+      const hashedPassword = await bcrypt.hash(password, saltRounds);
+  
+      const newUser: User = {
+        username,
+        password: hashedPassword,
+        role: "USER",
+      };
+  
+      await userCollection.insertOne(newUser);
+    } catch (error) {
+      throw error;
+    }
+  }
+
 export async function login(username: string, password: string) {
     if (username === "" || password === "") {
         throw new Error("Username and password required");

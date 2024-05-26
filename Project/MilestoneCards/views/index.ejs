@@ -10,7 +10,9 @@
     <header class="navbar">
         <nav>
             <ul>
-                <li><a href="/">Home</a></li>
+                <% if (user) { %>
+                    <li><%= user.username %> is logged in.</li>
+                <% } %>
             </ul>
         </nav>
         <form action="/" method="get">
@@ -25,6 +27,9 @@
                 <option value="desc" <%= sortDirection === "desc" ? "selected" : "" %>>Descending</option>
             </select>
             <button type="submit">Sort</button>
+        </form>
+        <form action="/logout" method="post">
+            <button type="submit">Logout</button>
         </form>
     </header>
     <main>

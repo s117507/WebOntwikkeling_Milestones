@@ -4,10 +4,11 @@ import path from "path";
 import * as data from './card.json';
 import { Cards, Owner, User } from "./interfaces";
 import { MongoClient } from "mongodb";
-import { connect, getCards, updateCard, getCardByName, login } from "./database";
+import { connect, getCards, updateCard, getCardByName, login, registerUser } from "./database";
 import { title } from "process";
-import bycrypt from 'bcrypt'
+import bcrypt from 'bcrypt';
 import session from "./session";
+import { secureMiddleware } from "./secureMiddleware";
 
 dotenv.config();
 
@@ -26,7 +27,7 @@ const uri = "mongodb+srv://estalistrinev:tPqvaqEIdP7z9KM1@mijnproject.udzcq5y.mo
 const client = new MongoClient(uri);
 
 
-app.get("/", async (req, res) => {
+app.get("/", secureMiddleware, async (req, res) => {
     if (req.session.user) {
         
     
@@ -112,6 +113,18 @@ app.get('/form/:name/edit', async (req, res) => {
     });
   })
 
+  app.post("/register", async (req, res) => {
+    const { username, password } = req.body;
+  
+    try {
+      await registerUser(username, password);
+      res.redirect("/login");
+    } catch (error) {
+      console.error("Registration error:", error);
+      res.status(400).send("Registration failed: ");
+    }
+  });
+
   app.get('/login', async  (req, res) => {
     res.render('login', {
         title: login
@@ -125,10 +138,29 @@ app.get('/form/:name/edit', async (req, res) => {
         let user : User = await login(username, password);
         delete user.password; 
         req.session.user = username;
-        res.redirect("/")
-    } catch (e : any) {
+        res.redirect("/");
+    } catch (e) {
+        console.error(e);
         res.redirect("/login");
     }
+});
+
+app.get("/logout", async (req, res) => {
+    if (!req.session.user) {
+        return res.redirect("/login");
+    }
+    req.session.destroy(() => {
+        res.redirect("/login");
+    });
+});
+
+app.post("/logout", async (req, res) => {
+    if (!req.session.user) {
+        return res.redirect("/login");
+    }
+    req.session.destroy(() => {
+        res.redirect("/login");
+    });
 });
 
 app.listen(3000, async () => {
